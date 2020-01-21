@@ -2,7 +2,7 @@
 description: automatic lung cancer patient management
 ---
 
-# LND
+# \_LND
 
 링크: [https://lndb.grand-challenge.org/Home/](https://lndb.grand-challenge.org/Home/)
 
