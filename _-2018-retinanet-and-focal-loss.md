@@ -52,11 +52,34 @@ RetinaNet Detector
   *  모든 피라미드 레벨의 채널 C는 256 으로 동일.
 * Anchors
   *  RPN\(Region Proposal Network\) 에서 사용하는 translation-invariant anchor box\(이동 불변 앵커박스\) 를 사용.
-  * The anchors have areas of 322 to 5122 on pyramid levels P3 to P7, respectively. As in \[20\], at each pyramid level we use anchors at three aspect ratios {1:2, 1:1, 2:1}.
-  * 
+  * The anchors have areas of 32^2 to 512^2 on pyramid levels P3 to P7, respectively. 
+  * anchor는 3가지 aspect ratios {1:2, 1:1, 2:1}를 가진다.
+  * 각 pyramid level에서 3가지 aspect ratio에 3가지 anchors of size{2^0, 2^1/3, 2^2/3}를 더한다.
+    * 3x3 = 9
+  * 각 anchor에는 물체 클래스수인 K개의 one-hot vector와 BBox regression 변수 4-vector가 할당된다.
+  * anchor와 GT BBox간 IoU 0.4이하면 배경취급한다.
+    * 0.5 이상이면 그 물체를 할당한다.
+    * \[0.4 ~0.5\) 에 들어오는 것은 학습시 무시한다.
+  * anchor는 최대 1개에 object에 할당될수 있고, 해당 K-클래스의 벡터를 1로 설정해준다.
+  * Box regression targets are computed as the offset between each anchor and its assigned object box, or omitted if there is no assignment.
 * Classification Subnet
+  * 각 position에 대해 각 A anchor\(9개\)와 K-object에 대해 object의 존재확률을 예측하는 작은 FCN.
+  * 각 pyramid level에 붙는다.
+  * 구조:
+    * 4개의 conv layer
+      * kernel = 3x3
+      * activiation ReLU
+      * channel = 256
+    * 5-th conv layer
+      * 마지막 unit 수는 \(9 x K\)
+      * 마지막에 sigmoid
 * Box Regression Subnet
-* 
+  * 각 anchor의 offset을 regression하는 목적.
+  * 구조:
+    * 4개의 conv layer - classification subnet과 동일.
+    * 
+  * 
+
 
 
 

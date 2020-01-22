@@ -6,7 +6,9 @@ description: automatic lung cancer patient management
 
 링크: [https://lndb.grand-challenge.org/Home/](https://lndb.grand-challenge.org/Home/)
 
-## Motivation
+## Home
+
+### Motivation
 
 * lung cancer는 조기 발견이 어려워서 다른 암들에 비해 생존률이 더디게 나아졌다.
 * Low-dose computed tomography \(CT\)는 조기 발견을 위한 스크리닝 툴로서 제안되었는데, lung cancer 위험군의 사망률을 20% 줄여준 것이 입증되었다.
@@ -16,7 +18,7 @@ description: automatic lung cancer patient management
 
 
 
-## Aims
+### Aims
 
 * The main goal of this challenge is the **automatic classification of chest CT scans according to the** [**2017 Fleischner society pulmonary nodule guidelines**](https://pubs.rsna.org/doi/full/10.1148/radiol.2017161659) for patient follow-up recommendation. 
 * The Fleischner guidelines are widely used for patient management in the case of nodule findings, and are composed of 4 classes, taking into account the number of nodules \(single or multiple\), their volume \(&lt;100mm³, 100-250mm³ and ⩾250mm³\) and texture \(solid, part solid and ground glass opacities \(GGO\)\). Furthermore, **three additional sub-challenges** will be held related to the different tasks needed to calculate a Fleischner score. 
@@ -29,5 +31,13 @@ description: automatic lung cancer patient management
   * **Sub-Challenge B - Nodule Segmentation:** Given a list of &gt;3mm nodule centroids, participants must segment the nodules in the corresponding chest CT scans;
   * **Sub-Challenge C - Nodule Texture Characterization:** Given a list of nodule centroids, participants must classify nodules into three texture classes - **solid**, **sub-solid** and **GGO**.
 
+## Data
 
+### Data Description
+
+* 294 CT scans
+* 데이터셋 설명 페이퍼: [https://arxiv.org/pdf/1911.08434.pdf](https://arxiv.org/pdf/1911.08434.pdf)
+  * **nodule ⩾3mm**: any lesion considered to be a nodule by the radiologist with greatest in-plane dimension larger or equal to 3mm;
+  * **nodule &lt;3mm**: any lesion considered to be a nodule by the radiologist with greatest in-plane dimension smaller than 3mm;
+  * **non-nodule**: any pulmonary lesion considered not to be a nodule by the radiologist, but that contains features which could make it identifiable as a nodule;
 
