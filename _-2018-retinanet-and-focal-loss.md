@@ -71,15 +71,15 @@ RetinaNet Detector
       * activiation ReLU
       * channel = 256
     * 5-th conv layer
-      * 마지막 unit 수는 \(9 x K\)
+      * 마지막 feature 수는 \(9 x K\)
       * 마지막에 sigmoid
 * Box Regression Subnet
   * 각 anchor의 offset을 regression하는 목적.
   * 구조:
     * 4개의 conv layer - classification subnet과 동일.
-    * 
-  * 
-
+    * 5-th conv layer
+      * 마지막 feature 수는 \(9 x 4\)
+* 
 
 
 
