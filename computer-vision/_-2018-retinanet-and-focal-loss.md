@@ -19,12 +19,12 @@ Focal Loss
 
 * Focal Loss는 학습 중에서 전경과 배경이 극도로 imbalance\(예, 1:1000\)한 one-stage Object Detection 시나리오를 다루기 위해 설계되었다.
 
-![cross entropy \(CE\) loss for binary classification](../.gitbook/assets/image%20%288%29.png)
+![cross entropy \(CE\) loss for binary classification](../.gitbook/assets/image%20%2810%29.png)
 
 * y: 0 또는 1의 값\(Ground Truth\)
 * p: 0~1 사이의 값\(예측확률\)
 
-![&#xD3B8;&#xC758;&#xB97C; &#xC704;&#xD574; pt&#xB97C; &#xC815;&#xC758;\)](../.gitbook/assets/image%20%2821%29.png)
+![&#xD3B8;&#xC758;&#xB97C; &#xC704;&#xD574; pt&#xB97C; &#xC815;&#xC758;\)](../.gitbook/assets/image%20%2823%29.png)
 
 *  CE\(p, y\) = CE\(pt\) = − log\(pt\)
 
@@ -32,13 +32,13 @@ Focal Loss
 
 1. Balanced Cross Entropy
 
-![](../.gitbook/assets/image%20%2831%29.png)
+![](../.gitbook/assets/image%20%2834%29.png)
 
 * 불균형을 다룰때, 보통은 weight로 클래스 빈도수의 역수인  α 를 곱해준다.
 
 2. Focal Loss Definition
 
-![](../.gitbook/assets/image%20%2830%29.png)
+![](../.gitbook/assets/image%20%2833%29.png)
 
 * .
 
