@@ -21,4 +21,5 @@
 ## ETC
 
 * [\(2016\) MTCNN](etc/2016-mtcnn.md)
+* [환경설정](etc/undefined.md)
 
