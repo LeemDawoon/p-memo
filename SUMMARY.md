@@ -22,5 +22,6 @@
 ## ETC
 
 * [\(2016\) MTCNN](etc/2016-mtcnn.md)
+* [\(2019\) ArcFace](etc/2019-arcface.md)
 * [환경설정](etc/undefined.md)
 
