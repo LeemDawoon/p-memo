@@ -6,9 +6,10 @@ description: >-
 
 # \(2016\) MTCNN
 
-* 논문링크: [https://arxiv.org/ftp/arxiv/papers/1604/1604.02878.pdf](https://arxiv.org/ftp/arxiv/papers/1604/1604.02878.pdf)
+* 논문링크: [htt ps://arxiv.org/ftp/arxiv/papers/1604/1604.02878.pdf](https://arxiv.org/ftp/arxiv/papers/1604/1604.02878.pdf)
 * 참조 블로그 및 페이지:
   * [https://yeomko.tistory.com/16](https://yeomko.tistory.com/16)
+  * [https://towardsdatascience.com/how-does-a-face-detection-program-work-using-neural-networks-17896df8e6ff](https://towardsdatascience.com/how-does-a-face-detection-program-work-using-neural-networks-17896df8e6ff)
 
 ## Abstract
 
