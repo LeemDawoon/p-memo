@@ -17,6 +17,7 @@
 * [\(2018\) RetinaNet & Focal Loss](computer-vision/_-2018-retinanet-and-focal-loss.md)
 * [\(2019\) MobileNetV2](computer-vision/2019-mobilenetv2.md)
 * [\_\(2016\) YOLO V2](computer-vision/_-2016-yolo-v2.md)
+* [\_\(2018\) Noise2Noise](computer-vision/_-2018-noise2noise.md)
 * [\_\(2017\) ShuffleNet](computer-vision/2017-shufflenet.md)
 
 ## ETC
@@ -24,4 +25,5 @@
 * [\(2016\) MTCNN](etc/2016-mtcnn.md)
 * [\(2019\) ArcFace](etc/2019-arcface.md)
 * [환경설정](etc/undefined.md)
+* [우당탕](undefined.md)
 
