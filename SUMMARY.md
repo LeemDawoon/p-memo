@@ -7,6 +7,7 @@
 
 * [\(2018\) 특허-안저영상 적합성 판단](medical/2018.md)
 * [\(2018\) CXNet-m1](medical/2018-cxnet-m1.md)
+* [Untitled](medical/untitled.md)
 
 ## Computer Vision
 
@@ -19,6 +20,7 @@
 * [\_\(2016\) YOLO V2](computer-vision/_-2016-yolo-v2.md)
 * [\_\(2018\) Noise2Noise](computer-vision/_-2018-noise2noise.md)
 * [\_\(2017\) ShuffleNet](computer-vision/2017-shufflenet.md)
+* [\_\(2019\)EfficientDet](computer-vision/_-2019-efficientdet.md)
 
 ## ETC
 

@@ -15,3 +15,11 @@ conda 가상환경 실행
 
 * $ conda create -n dawoon python=3.6
 
+
+
+
+
+* [https://github.com/inoryy/tensorflow-optimized-wheels](https://github.com/inoryy/tensorflow-optimized-wheels)
+
+$ conda create -n dawoon2 python=3.7
+
