@@ -33,6 +33,7 @@ Our contributions can be summarized as follows:
 
 ## 2. Materials\(데이터\)
 
+* \(대략 작성하여, 자세한건 논문직접보기.\)
 * Radboud University Medical Centre \(Radboudumc or rumc\)의 데이터만을 학습에 사용하고 나머지 센터의 데이터는 테스트 용으로 사용했다.
 * RGB 패치는 128x128 로 추출했다.
 
