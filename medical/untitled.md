@@ -4,7 +4,7 @@ description: >-
   convolutional neural networks for computational pathology
 ---
 
-# \(2019\) Pathology에서 Augmentation과 Normalization 효과의 정량화
+# \(2019\) effects of data augmentation and stain color normalization
 
 * 논문 링크: [https://arxiv.org/pdf/1902.06543.pdf](https://arxiv.org/pdf/1902.06543.pdf)
 * 요약:
