@@ -73,15 +73,24 @@ Our contributions can be summarized as follows:
 
 * **Basic**:  90 degree rotations / vertical and horizontal mirroring.
 * **Morphology:**
-  * basic augmentation\(위에 basic에서 확장\)
+* * basic augmentation\(위에 basic에서 확장\)
   * **scaling: \[0.8, 1.2\]**
+    * 
   * **elastic deformation: α ∈ \[80, 120\] and σ ∈ \[9.0, 11.0\]**
   * **additive Gaussian noise\(perturbing the signal-to-noise ratio\):  σ ∈ \[0, 0.1\]**
   * **Gaussian blurring \(simulating out-of-focus artifacts\): σ ∈ \[0, 0.1\]**
+  * tf.keras.layers.GaussianNoise\(stddev\)
+    * mu, sigma = 0, 0.1 
+    * noise = np.random.normal\(mu, sigma, \[2,2\]\) 
+    * signal = clean\_signal + noise
+  * cv2.GaussianBlur\(img, \(5,5\), sigmaa\)
 * **Brightness & contrast \(BC\)**: 
   * 위에 Morphology에서 확장.
   *  **brightness intensity ratio: \[0.65, 1.35\]**
   *  **contrast intensity ratio: \[0.5, 1.5\]**
+  * tf.keras.preprocessing.image.ImageDataGenerator\(
+    * brightness\_range\)
+  * 
 * **Hue-Saturation-Value \(HSV\):**
   * 위에 BC에서 확장
   * randomly shifting the hue and saturation channels in the HSV color space
@@ -96,6 +105,18 @@ Our contributions can be summarized as follows:
     * Third, it transformed the resulting stains into regular RGB color space.
   * **HED-light\(intensity ratios for all HED channels\): \[−0.05, 0.05\]**
   * **HED-strong\(intensity ratios for all HED channels\): \[−0.2, 0.2\]**
+
+**basic**
+
+`tf.keras.preprocessing.image.ImageDataGenerator(rotation_range, horizontal_flip, vertical_flip)`
+
+scaling
+
+tf~~.~~keras.preprocessing.image.ImageDataGenerator\(zoom\_range\)
+
+\*\*\*\*
+
+\*\*\*\*
 
 3.2. Stain color normalization
 
