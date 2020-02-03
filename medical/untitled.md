@@ -40,11 +40,13 @@ Our contributions can be summarized as follows:
 
 * 분열을 하고 있는 세포를 검출하는 것으로 이진류 문제이다.
 * TUPAC Challenge에서 받아올 수 있는 public 데이터이다.
+* 0.25 µm/pixel resolution
 
 2.2. Tumor metastasis detection
 
 * metastatic tumor cell 을 포함하고 있는지 분류하는 이진분류 문제이다.
 * Camelyon17 Challenge 에서 얻을 수 있는 public 데이터이다.
+* t 0.25 µm/pixel resolution
 
 2.3. Prostate epithelium detection
 
@@ -55,6 +57,7 @@ Our contributions can be summarized as follows:
 
 * 9개의 colorectal cancer \(CRC\)를 분류하는 문제이다.
   * 1\) tumor, 2\) stroma, 3\) muscle, 4\) lymphocytes, 5\) healthy glands, 6\) fat, 7\) blood cells, 8\) necrosis and debris, and 9\) mucus.
+* 0.5 µm/pixel resolution
 * 요 테스트 에선 따로 2개의 데이터셋을 추가로 사용.
 
 2.5. Multi-organ dataset
