@@ -5,9 +5,9 @@
 
 ## Medical
 
+* [\(2019\) effects of data augmentation and stain color normalization](medical/untitled.md)
 * [\(2018\) 특허-안저영상 적합성 판단](medical/2018.md)
 * [\(2018\) CXNet-m1](medical/2018-cxnet-m1.md)
-* [\(2019\) effects of data augmentation and stain color normalization](medical/untitled.md)
 
 ## Computer Vision
 
