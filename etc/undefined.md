@@ -1,8 +1,4 @@
----
-description: 미니콘다를 이용한 python 개발 환경 설정
----
-
-# Miniconda
+# 환경설정
 
 설치 
 

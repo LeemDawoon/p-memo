@@ -8,14 +8,12 @@ description: Focal Loss for Dense Object Detection
 * 참조 블로그 및 페이지:
   * [https://uk-kim.github.io/2018/12/07/Focal-loss-for-dense-object-detection.html](https://uk-kim.github.io/2018/12/07/Focal-loss-for-dense-object-detection.html)
 
-
-
-Abstract
+## Abstract
 
 * one-stage detectors 학습에서 전경과 배경이 극단적으로 불균형\(imbalance\)한 것이 성능 저하의 주요 원인
 * 이러한 class imbalance한 문제를 보통의 cross entropy loss를 잘 분류된 샘플에 대해서 가중치를 낮추는 방식으로 변형하여 해결하는 방법을 제안.
 
-Focal Loss
+## Focal Loss
 
 * Focal Loss는 학습 중에서 전경과 배경이 극도로 imbalance\(예, 1:1000\)한 one-stage Object Detection 시나리오를 다루기 위해 설계되었다.
 
@@ -30,19 +28,18 @@ Focal Loss
 
 
 
-1. Balanced Cross Entropy
+### 1. Balanced Cross Entropy
 
 ![](../.gitbook/assets/image%20%2835%29.png)
 
 * 불균형을 다룰때, 보통은 weight로 클래스 빈도수의 역수인  α 를 곱해준다.
 
-2. Focal Loss Definition
+### 2. Focal Loss Definition
 
 ![](../.gitbook/assets/image%20%2834%29.png)
 
-* .
-
-RetinaNet Detector
+* 
+## RetinaNet Detector
 
 ![](../.gitbook/assets/image%20%283%29.png)
 

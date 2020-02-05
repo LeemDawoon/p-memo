@@ -31,18 +31,16 @@ description: >-
   * **P-Net:** 후보 windows와 BBox regression vector를 얻는다.
   * BBox regression vector를 교정\(calibrate\) 한다.
   * non-maximum suppression \(NMS\)를 사용해서 너무 겹치는 후보를 합친다.
-    * 참조\) NMS는 [\(2016\) SSD](https://leemdawoon.gitbook.io/p-memo/computer-vision/2016-ssd) 페이지에 정리된 내용 
 * **Stage 2: Refine Network \(R-Net\)**
   * all candidates are fed to another CNN, called Refine Network \(R-Net\), which further rejects a large number of false candidates, performs calibration with bounding box regression, and NMS candidate merge.
-  * R-Net: P-Net에서 획득한 BBox 중에서 진짜 얼굴에 해당하는 영역을 추려내고, BBox Regression을 더 정교히 수행한.
-  * P-Net과 다르게 끝단에 FC 레이어가 있.
-  * 찾아낸 박스는 원래 입력 이미지 크기로 되돌린 다음, NMX와 BBox Regression 을 수행한다.
-  * 여기서 살아남은 BBox 들만 O-Net\(stage3\)에 전달한다.
+  * R-Net: P-Net에서 획득한 BBox 중에서 진짜 얼굴에 해당하는 영역을 추려내고, BBox Regression을 더 정교히 수행.
+  * P-Net과 다르게 끝단에 FC 레이어가 있음.
+  * 찾아낸 박스는 원래 입력 이미지 크기로 되돌린다음, NMX와 BBox Regression 수행.
+  * 여기서 살아남은 BBox 들만 O-Net\(stage3\)에 전달.
 * **Stage 3: Output Network \(O-Net\)**
   * This stage is similar to the second stage, but in this stage we aim to describe the face in more details. 
   * In particular, the network will output five facial landmarks’ positions. 
-  * 최종 Face Detection, Face Alignment 결과 값을 도출한다.
-  * 역시 NMS를 수행한다.
+  * 최종 Face Detection, Face Alignment 결과 값을 도출.
 
 ### B. CNN Architectures 
 
