@@ -1,10 +1,11 @@
 # Table of contents
 
-* [\(2020\) Segmentation 정확도를 향상시키는 Active Learning 연구](README.md)
-* [\_LND](lnd.md)
+* [P-MEMO](README.md)
 
 ## Medical
 
+* [\_LND](medical/lnd.md)
+* [\(2020\) Active Learning For Segmentation](medical/2020-active-learning-for-segmentation.md)
 * [\(2019\) effects of data augmentation and stain color normalization](medical/2019-effect-aug-norm.md)
 * [\(2018\) 특허-안저영상 적합성 판단](medical/2018.md)
 * [\(2018\) CXNet-m1](medical/2018-cxnet-m1.md)
