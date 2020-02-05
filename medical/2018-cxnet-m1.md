@@ -32,9 +32,9 @@ description: 'CXNet-m1: Anomaly Detection on Chest X-Rays with Image-Based Deep 
   * \(4\)식이 일반적인 cross entropy에 대한 식이고, \(10\)식이 sin-loss에 대한 식인데, 차이점은 곱해지는 베타라고 볼수 있다.
   * 식\(9\)는 베타에 대한 식.
 
-![](../.gitbook/assets/image%20%2852%29.png)
+![](../.gitbook/assets/image%20%2853%29.png)
 
-![](../.gitbook/assets/image%20%2855%29.png)
+![](../.gitbook/assets/image%20%2856%29.png)
 
 * 2\) Model Architecture:
   * CXNet-m1 \(Chest X-ray Network-model 1\)
@@ -47,9 +47,9 @@ description: 'CXNet-m1: Anomaly Detection on Chest X-Rays with Image-Based Deep 
 
 * It contains more than 30,000 patients, 297,541 labeled chest x-ray images and 14 kinds abnormal images including Infiltration, Effusion, Atelectasis, Nodule, Mass, Pneumothorax, Consolidation, Pleural Thickening, Cardiomegaly, Emphysema, Edema, Fibrosis, Pneumonia and Hernia.
 
-![](../.gitbook/assets/image%20%2829%29.png)
+![](../.gitbook/assets/image%20%2830%29.png)
 
-![](../.gitbook/assets/image%20%2843%29.png)
+![](../.gitbook/assets/image%20%2844%29.png)
 
 B. METRICS
 
