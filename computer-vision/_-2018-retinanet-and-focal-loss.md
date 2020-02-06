@@ -40,6 +40,7 @@ description: Focal Loss for Dense Object Detection
 
 * 감마 값이 0이면 일반 Cross Entropy와 동일하다.
 * 본 논문에서는 2일때의 실험 결과가 가장 좋다고 한다.
+* 아래 그래프를 보면 잘 분류된 데이터에 대해서는 로스가 크게 작아짐
 
 ![](../.gitbook/assets/image%20%2825%29.png)
 
