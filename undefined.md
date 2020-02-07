@@ -11,6 +11,10 @@
 * \(2019\) LADet:A Light-weight and Adaptive Network for Multi-scale Object Detection
   * [http://proceedings.mlr.press/v101/zhou19a/zhou19a.pdf](http://proceedings.mlr.press/v101/zhou19a/zhou19a.pdf)
   * 파이토치기반 코드\( [https://github.com/nob87208/LADet](https://github.com/nob87208/LADet)\)
+* optimization
+  * clipnorm
+  * clipvalue
+  * decay
 
 
 

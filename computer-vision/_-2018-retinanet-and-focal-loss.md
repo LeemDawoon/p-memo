@@ -81,6 +81,14 @@ description: Focal Loss for Dense Object Detection
     * 4개의 conv layer - classification subnet과 동일.
     * 5-th conv layer
       * 마지막 feature 수는 \(9 x 4\)
+
+Optimization:
+
+* SGD
+  * Weight decay of 0.0001 and momentum of 0.9 are used.
+* 16 images per minibatch
+* , all models are trained for 90k iterations with an initial learning rate of 0.01, which is then divided by 10 at 60k and again at 80k iterations.
+* We use horizontal image flipping
 * 
 
 
