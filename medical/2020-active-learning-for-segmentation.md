@@ -20,9 +20,9 @@ description: >-
   * 모델1: ROI BBox\(Voxel\)를 예측하도록 학습.
   * 모델2: BBox 로 부터 Segmentation을 예측하도록 학습.
 
-![Figure 2 Workflow of active learning framework.](../.gitbook/assets/image%20%2820%29.png)
+![Figure 2 Workflow of active learning framework.](../.gitbook/assets/image%20%2821%29.png)
 
-![Figure 3 Data numbers in each stage of active learning.](../.gitbook/assets/image%20%284%29.png)
+![Figure 3 Data numbers in each stage of active learning.](../.gitbook/assets/image%20%285%29.png)
 
 * 실험 절차 \(Figure 2 & Figure 3 설명\).
   * \(Figure 3의 데이터의 흐름이 잘 매칭이 안된다\).
