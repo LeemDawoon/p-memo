@@ -29,4 +29,5 @@
 * [\(2019\) ArcFace](etc/2019-arcface.md)
 * [Miniconda](etc/undefined.md)
 * [우당탕](undefined.md)
+* [Quantization](quantization.md)
 
