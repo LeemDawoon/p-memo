@@ -61,3 +61,7 @@ description: 모바일에서 딥러닝 모델의 속도를 높이는 방법
     tflite_quant_model = converter.convert()
     ```
 
+* efficient\_det\_b0.weight.tflite : 3
+* efficient\_det\_b0.float16.tflite: 1.3초
+* efficient\_det\_b1.float16.tflite: 2.5초
+
