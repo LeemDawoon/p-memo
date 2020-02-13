@@ -1,4 +1,4 @@
-# 우당탕
+# 읽을거리
 
 * \(2002\) LEARNING WITH LESS DATA VIA WEAKLY LABELED PATCH CLASSIFICATION IN DIGITAL PATHOLOGY
   * [https://arxiv.org/pdf/1911.12425.pdf](https://arxiv.org/pdf/1911.12425.pdf)
