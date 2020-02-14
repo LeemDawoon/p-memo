@@ -27,11 +27,11 @@
 
 * [\(2016\) MTCNN](etc/2016-mtcnn.md)
 * [\(2019\) ArcFace](etc/2019-arcface.md)
-* [Quantization](etc/quantization.md)
+* [Quantization](quantization.md)
 * [Miniconda](etc/undefined.md)
 
 ## 우당탕 <a id="undefined-1"></a>
 
-* [읽을거리](undefined-1/undefined.md)
+* [읽을거리](undefined.md)
 * [EfficientDet =&gt;tflite =&gt;Android](undefined-1/efficientdet-greater-than-tflite-greater-than-android.md)
 
