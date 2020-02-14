@@ -122,11 +122,11 @@ BiFPN: efficient bidirectional cross-scale connections and weighted feature fusi
 
 ![](../.gitbook/assets/image%20%2850%29.png)
 
-* 3\) Box/class prediction networ
+* 3\) Box/class prediction network
 * 
 ![](../.gitbook/assets/image%20%288%29.png)
 
-* Input image resolution
+* 4\) Input image resolution
   * 
 
 ![](../.gitbook/assets/image%20%2825%29.png)
