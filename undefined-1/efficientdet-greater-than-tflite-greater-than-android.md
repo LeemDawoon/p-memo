@@ -12,7 +12,9 @@ description: 삽질정리
   * swish =&gt; relu \(learning rate를 조금 더 크게 바꿔주면 그래도 잘 학습된다.\)
   * FixedDropout =&gt; Dropout
   * PriorProbability=&gt; 대충찍어보면, -1.9955 정도의 값을 bias 초기화에 사용
-* 4. 학습.
+* 4. batch 이외의 차원에 None 이 있으면 안됨
+  * FPN 을 합치는 과정에서, batch 다음에 None 채널이 생기도록 코딩되어 있다.  요고 변경 필요하다.
+* 5. 학습.
 * 5. tflite 컨버팅
   * 저장된 h5 모델을 읽어 온다.
   * 하지만 loss가 커스텀이라...   get\_custom\_objects\(\)로 우선 loss 만 업데이트 해준다.
