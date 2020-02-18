@@ -2,7 +2,7 @@
 description: 'EfficientDet: Scalable and Efficient Object Detection'
 ---
 
-# \(2019\)EfficientDet
+# \(2019\) EfficientDet
 
 * 논문링크: [https://arxiv.org/pdf/1911.09070.pdf](https://arxiv.org/pdf/1911.09070.pdf)
 * 참조 블로그 및 페이지:
