@@ -17,6 +17,14 @@
   * decay
 * \(2019\) Fast Online Object Tracking and Segmentation: A Unifying Approach
   * [https://arxiv.org/pdf/1812.05050v2.pdf](https://arxiv.org/pdf/1812.05050v2.pdf)
+* \(2018\) Semantic Video Segmentation: A Review on Recent Approaches
+* \(2019\) Semantic Segmentation of Video Sequences with Convolutional LSTMs
+* \(2019\) See More, Know More: Unsupervised Video Object Segmentation with Co-Attention Siamese Networks
+  * [https://github.com/carrierlxk/COSNet](https://github.com/carrierlxk/COSNet)
+  * [https://arxiv.org/pdf/2001.06810v1.pdf](https://arxiv.org/pdf/2001.06810v1.pdf)
+* \(2019\) [FEELVOS: Fast End-to-End Embedding Learning for Video Object Segmentation](https://paperswithcode.com/paper/feelvos-fast-end-to-end-embedding-learning)
+  * [https://arxiv.org/pdf/1902.09513v2.pdf](https://arxiv.org/pdf/1902.09513v2.pdf)
+  * [https://github.com/tensorflow/models/tree/master/research/feelvos](https://github.com/tensorflow/models/tree/master/research/feelvos)
 
 
 
