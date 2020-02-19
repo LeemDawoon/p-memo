@@ -15,8 +15,8 @@
 * [\(2015\) ResNet](computer-vision/2015-resnet.md)
 * [\(2015\) YOLO](computer-vision/2015-yolo.md)
 * [\(2016\) SSD](computer-vision/2016-ssd.md)
-* [\(2017\) MobileNets](computer-vision/untitled-1.md)
-* [\(2018\) RetinaNet & Focal Loss](computer-vision/_-2018-retinanet-and-focal-loss.md)
+* [\(2017\) MobileNets](computer-vision/2017-mobilenets.md)
+* [\(2018\) RetinaNet & Focal Loss](computer-vision/2018-retinanet-and-focal-loss.md)
 * [\(2019\) MobileNetV2](computer-vision/2019-mobilenetv2.md)
 * [\_\(2016\) YOLO V2](computer-vision/_-2016-yolo-v2.md)
 * [\_\(2018\) Noise2Noise](computer-vision/_-2018-noise2noise.md)
@@ -25,7 +25,7 @@
 * [\_\(2019\) SiamMask](computer-vision/_-2019-siammask.md)
 * [\_\(2019\)](computer-vision/2019.md)
 * [\_\(2016\) SiamFC](computer-vision/_-2016-siamfc.md)
-* [\_\(2015\) convolutional LSTM](computer-vision/_-2015-convolutional-lstm.md)
+* [\(2015\) Convolutional LSTM](computer-vision/2015-convolutional-lstm.md)
 
 ## ETC
 
