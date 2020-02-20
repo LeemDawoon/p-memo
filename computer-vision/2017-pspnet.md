@@ -2,11 +2,9 @@
 description: Pyramid Scene Parsing Network
 ---
 
-# \_\(2017\) PSPNet
+# \(2017\) PSPNet
 
 * 논문링크: [https://arxiv.org/pdf/1612.01105.pdf](https://arxiv.org/pdf/1612.01105.pdf)
-* 
-
 
 
 
@@ -17,10 +15,6 @@ description: Pyramid Scene Parsing Network
   * • We develop an effective optimization strategy for deep ResNet \[13\] based on deeply supervised loss. 
   * • We build a practical system for state-of-the-art scene parsing and semantic segmentation where all crucial implementation details are included.
 
-
-
-
-
 2. Related Work
 
 * FCN
@@ -28,16 +22,16 @@ description: Pyramid Scene Parsing Network
 * multi-scale feature
 * conditional random field
 
-3. Pyramid Scene Parsing Network
+## 3. Pyramid Scene Parsing Network
 
-3.1. Important Observations
+### 3.1. Important Observations
 
 * 1\) Mismatched Relationship
 * 2\) Confusion Categories
 * 3\) Inconspicuous Classes
 * To summarize these observations, many errors are partially or completely related to **contextual relationship** and **global information** for **different receptive fields**. Thus a deep network with a suitable global-scene-level prior can much improve the performance of scene parsing.
 
-3.2. Pyramid Pooling Module
+### 3.2. Pyramid Pooling Module
 
 * DNN에서,  receptive field의 크기는 대략적으로 context information를 얼마나 사용할지를 나타낸다.
 * 이론적으로 ResNet의 receptive field는 입력 이미지보다 큰데, 실제적인\(empirical\) 크기는 더 작다.
@@ -62,7 +56,7 @@ description: Pyramid Scene Parsing Network
 * hierarchical global prior은 sub-regions에 따라 다른 크기의 정보를 포함한다. 
 * 이걸 pyramid pooling module이라고 한다.
 
-![pyramid pooling module](../.gitbook/assets/image%20%2854%29.png)
+![PSPNet](../.gitbook/assets/image%20%2855%29.png)
 
 * pyramid pooling module은  4가지 스케일의 feature를 융합한다.
 * 1\) pyramid
@@ -87,6 +81,17 @@ description: Pyramid Scene Parsing Network
 * 그러므로 이 multi-stage 커널은 representation에서  reasonable gap을 유지해야 한다.
 * 본 논문의 Our pyramid pooling module은 4-레벨이고, 각 bin의 size는 1×1, 2×2, 3×3, 6×6 이다.
 * pooling 연산자의 종류는 max pooling과 average pooling을 사용하여 실험하였다.
+
+3.3. Network Architecture
+
+* pyramid scene parsing network \(PSPNet\)
+* \(b\)의 feature map을 뽑는데, dilated network strategy의 ResNet pretrained 모델을 사용하였다.
+* ResNet 모델의 최종 feature map 크기는 입력 이미지의 1/8 크기 이다.  
+* \(나머진 중복되는 것 같아 생략\)
+
+## 5. Experiments
+
+![](../.gitbook/assets/image%20%2865%29.png)
 
  
 

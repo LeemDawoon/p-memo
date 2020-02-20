@@ -31,7 +31,7 @@ Video Semantic Segmentation
 
 ### 3.2 Network Architecture
 
-![](../.gitbook/assets/image%20%2884%29.png)
+![](../.gitbook/assets/image%20%2887%29.png)
 
 * 3.1에서 연산량을 분석해본 결과, 속도를 높이기 위해 이러한 전략들을 사용했다.
   * downsampling input, 
@@ -80,7 +80,7 @@ Video Semantic Segmentation
 
 ![Loss](../.gitbook/assets/image%20%2845%29.png)
 
-![branch t&#xC5D0;&#xC11C;&#xC758; predicted feature map](../.gitbook/assets/image%20%2890%29.png)
+![branch t&#xC5D0;&#xC11C;&#xC758; predicted feature map](../.gitbook/assets/image%20%2893%29.png)
 
 ![Branch t&#xC758; Loss&#xC758; &#xAC00;&#xC911;&#xCE58;](../.gitbook/assets/image%20%2818%29.png)
 

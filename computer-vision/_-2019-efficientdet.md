@@ -19,7 +19,7 @@ BiFPN: efficient bidirectional cross-scale connections and weighted feature fusi
 *  Multi-scale feature fusion의 목적은 다른 resolution의 feature를 통합하는 것이다.
 * 이를 공식화 하면 다음과 같다:
 
-![](../.gitbook/assets/image%20%2891%29.png)
+![](../.gitbook/assets/image%20%2894%29.png)
 
 * 우리의 목표는 multi-scale feature의 리스트인 P-in 이 주어 졌을때, 그것을 효과적으로 통합하여 P-out을 내뱉는 함수 f를 찾는 것이다.
 
@@ -28,7 +28,7 @@ BiFPN: efficient bidirectional cross-scale connections and weighted feature fusi
 * P-in의 하위 첨자는 레벨을 뜻한다.
 * 전통적인 FPN은 multi-scale features를 top-down 방식으로 통합한다.
 
-![](../.gitbook/assets/image%20%2892%29.png)
+![](../.gitbook/assets/image%20%2895%29.png)
 
 ### 3.2. Cross-Scale Connections
 
@@ -63,7 +63,7 @@ BiFPN: efficient bidirectional cross-scale connections and weighted feature fusi
 
 #### Softmax-based fusion:
 
-![](../.gitbook/assets/image%20%2882%29.png)
+![](../.gitbook/assets/image%20%2885%29.png)
 
 * weight에 softmax를 적용하는 방법이다.
 * 하지만 계산 비용이 너무 많이든다.
@@ -85,7 +85,7 @@ BiFPN: efficient bidirectional cross-scale connections and weighted feature fusi
 * 마지막 식은 bottom-up pathway에서 output feature 이다.
 * 효율성을 더 높이기 위해, feature fusion에서 depthwise separable convolution을 사용하였고,  add batch normalization 과 activation을 각 convolution 마다 추가하였다.
 
-![](../.gitbook/assets/image%20%2873%29.png)
+![](../.gitbook/assets/image%20%2876%29.png)
 
 ![](../.gitbook/assets/image%20%2841%29.png)
 
@@ -97,7 +97,7 @@ BiFPN: efficient bidirectional cross-scale connections and weighted feature fusi
 
 ### 4.1. EfficientDet Architecture
 
-![](../.gitbook/assets/image%20%2879%29.png)
+![](../.gitbook/assets/image%20%2882%29.png)
 
 * EfficientDet는 크게 one-stage detector의 패러다임을 따른다.
 * ImageNet으로 pretrained된 EfficientNet을 백본으로 사용하였다.
@@ -116,7 +116,7 @@ BiFPN: efficient bidirectional cross-scale connections and weighted feature fusi
 * 2\) BiFPN network
   * 
 
-![](../.gitbook/assets/image%20%2865%29.png)
+![](../.gitbook/assets/image%20%2868%29.png)
 
 * 3\) Box/class prediction network
 * 
@@ -129,7 +129,7 @@ BiFPN: efficient bidirectional cross-scale connections and weighted feature fusi
 
 
 
-![](../.gitbook/assets/image%20%2850%29.png)
+![](../.gitbook/assets/image%20%2851%29.png)
 
 
 
