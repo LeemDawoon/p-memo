@@ -27,16 +27,63 @@ description: Pyramid Scene Parsing Network
 * dilated CNN
 * multi-scale feature
 * conditional random field
-* 
+
 3. Pyramid Scene Parsing Network
 
 3.1. Important Observations
 
-Mismatched Relationship
+* 1\) Mismatched Relationship
+* 2\) Confusion Categories
+* 3\) Inconspicuous Classes
+* To summarize these observations, many errors are partially or completely related to **contextual relationship** and **global information** for **different receptive fields**. Thus a deep network with a suitable global-scene-level prior can much improve the performance of scene parsing.
 
-Confusion Categories
+3.2. Pyramid Pooling Module
 
-Inconspicuous Classes
+* DNN에서,  receptive field의 크기는 대략적으로 context information를 얼마나 사용할지를 나타낸다.
+* 이론적으로 ResNet의 receptive field는 입력 이미지보다 큰데, 실제적인\(empirical\) 크기는 더 작다.
+* 특히 high-level layer일수록 더 그렇다.
+* 어런 특성은 딥러닝 네트워크가 큰 global scenery prior를 충분히 통합하지 못한다.
+* 이러한 이슈를 해결하기 위해, 본 논문은 효과적인 global prior representation을 제안한다.
+
+
+
+* Global average pooling\(GAP\)은 global contextual prior의 좋은 baseline 모델이다.
+* 주로 classification 분야에 쓰였는데, segmentation에도잘 적용되었다. 하지만, 복잡한 이미지에서 GAP는 필요한 정보를 다루기에 불충분하다.
+* 여러 물체가 있는 복잡한 이미지를 싱글벡터로 융합하면, 공간적 관계 정보를 잃고 모호하게 된다.
+* Global context information along with sub-region context는 다양한 카테고리를 구별하는데 도움이 된다.
+* A more powerful representation could be fused information from different sub-regions with these receptive fields
+* \(이러한 receptive fields를 통해 다른 하위 지역의 정보를보다 강력하게 표현할 수 있습니다.\)
+
+
+
+* \[Spatial pyramid pooling in deep convolutional networks for visual recognition\] 연구에서, pyramid pooling을 통해 만들어진 다른 level의 feature map들은 flatten된 후, concat 되어 fully connected layer로 입력된다.
+* 이러한 global prior는 CNN의 fixed-size 제약\(같은 크기 입력?!\)을 제거하기 위해 디자인 되었다.
+* 다른 sub-regions 간 context information 손실을 줄이기 위해서, 본 논문은 hierarchical global prior을 제안한다.
+* hierarchical global prior은 sub-regions에 따라 다른 크기의 정보를 포함한다. 
+* 이걸 pyramid pooling module이라고 한다.
+
+![pyramid pooling module](../.gitbook/assets/image%20%2854%29.png)
+
+* pyramid pooling module은  4가지 스케일의 feature를 융합한다.
+* 1\) pyramid
+  * 위 그림에서 빨간색 부분은,  coarsest level로 한개의 bin output을 내뱉는 global pooling이다.
+  * 나머지 pyramid level은 feature map을 different sub-regions으로 나누고, different location에 pooled representation을 형성한다.
+  * pyramid pooling module의 different level의 output은 다양한 크기의 feature map을 포함한다.
+* 2\) 1x1 conv
+  * the weight of global feature를 유지하기 위해서, 각 pyramid level 마다 1x1 conv 레이어를 사용한다. 
+  * 이는 pyramid의 level size가 N이라고 한다면,  원본 이미지의 1/N개로 context representation 차원을 줄인다.
+* 3\) upsample
+  * 그리고 original feature map과 동일한 크기로 upsampling 한다.
+  *  bilinear interpolation 사용.
+* 4\) concat
+  * 마지막으로 different levels의 feature 들은 concat되어 최종 pyramid pooling global feature가 된다.
+
+
+
+* pyramid levels의 수과 각 level의 size는 바뀔 수 있다.
+* 이는 pyramid pooling layer의 입력이되는 feature map의 size와 관련이 있다.
+* 
+ 
 
 
 
