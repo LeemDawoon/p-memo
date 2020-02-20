@@ -5,6 +5,8 @@ description: Pyramid Scene Parsing Network
 # \(2017\) PSPNet
 
 * 논문링크: [https://arxiv.org/pdf/1612.01105.pdf](https://arxiv.org/pdf/1612.01105.pdf)
+* 참조자료:
+  * [https://m.blog.naver.com/sogangori/220952866661](https://m.blog.naver.com/sogangori/220952866661)
 
 
 
@@ -56,7 +58,7 @@ description: Pyramid Scene Parsing Network
 * hierarchical global prior은 sub-regions에 따라 다른 크기의 정보를 포함한다. 
 * 이걸 pyramid pooling module이라고 한다.
 
-![PSPNet](../.gitbook/assets/image%20%2855%29.png)
+![PSPNet](../.gitbook/assets/image%20%2856%29.png)
 
 * pyramid pooling module은  4가지 스케일의 feature를 융합한다.
 * 1\) pyramid
@@ -66,6 +68,8 @@ description: Pyramid Scene Parsing Network
 * 2\) 1x1 conv
   * the weight of global feature를 유지하기 위해서, 각 pyramid level 마다 1x1 conv 레이어를 사용한다. 
   * 이는 pyramid의 level size가 N이라고 한다면,  원본 이미지의 1/N개로 context representation 차원을 줄인다.
+    * \(b\)의 feature map는 지역적 정보를 가지고 있고, \(c\)를 통해 나온 feature map은 정역적 정보를 가지고 있는데,
+    * 위와 같이 차원을 줄여 줘야 지역특징과 전역 특징의 비율이 5:5 비율을 유지할 수 있다.
 * 3\) upsample
   * 그리고 original feature map과 동일한 크기로 upsampling 한다.
   *  bilinear interpolation 사용.
@@ -84,14 +88,15 @@ description: Pyramid Scene Parsing Network
 
 3.3. Network Architecture
 
-* pyramid scene parsing network \(PSPNet\)
+* **pyramid scene parsing network \(PSPNet\)**
 * \(b\)의 feature map을 뽑는데, dilated network strategy의 ResNet pretrained 모델을 사용하였다.
 * ResNet 모델의 최종 feature map 크기는 입력 이미지의 1/8 크기 이다.  
-* \(나머진 중복되는 것 같아 생략\)
+* 
+
 
 ## 5. Experiments
 
-![](../.gitbook/assets/image%20%2865%29.png)
+![](../.gitbook/assets/image%20%2866%29.png)
 
  
 
