@@ -82,7 +82,12 @@ description: Pyramid Scene Parsing Network
 
 * pyramid levels의 수과 각 level의 size는 바뀔 수 있다.
 * 이는 pyramid pooling layer의 입력이되는 feature map의 size와 관련이 있다.
-* 
+* The structure abstracts different sub-regions by adopting varying-size pooling kernels in a few strides 
+* \(이 구조는 다양한 pooling kernels 크기\(in a few strides \)를 채택하 different sub-regions을 추상화한다.\)
+* 그러므로 이 multi-stage 커널은 representation에서  reasonable gap을 유지해야 한다.
+* 본 논문의 Our pyramid pooling module은 4-레벨이고, 각 bin의 size는 1×1, 2×2, 3×3, 6×6 이다.
+* pooling 연산자의 종류는 max pooling과 average pooling을 사용하여 실험하였다.
+
  
 
 
