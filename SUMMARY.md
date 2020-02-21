@@ -29,6 +29,7 @@
 * [\(2018\) ICNet](computer-vision/2018-icnet.md)
 * [\(2017\) PSPNet](computer-vision/2017-pspnet.md)
 * [\(2016\) Dilated Convolution](computer-vision/2016-dilated-convoloution.md)
+* [\(2019\) FEELVOS](computer-vision/2019-feelvos.md)
 
 ## ETC
 
