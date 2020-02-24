@@ -24,7 +24,7 @@ description: >-
 * 일정시간 간격으로 관찰하면, 다음과 같은 sequence 데이터를 얻을 수 있다.
   * 
 
-![](../.gitbook/assets/image%20%2891%29.png)
+![](../.gitbook/assets/image%20%2892%29.png)
 
 * 시공간적 예측문제\(spatiotemporal sequence forecasting problem\)는. 아래과 같은 식으로 표현될 수있다. J개의 관찰값이 주어졌을 때, K개의 값을 예측.
   * 
@@ -39,20 +39,20 @@ description: >-
 
 ![LSTM](../.gitbook/assets/image%20%287%29.png)
 
-![Inputs](../.gitbook/assets/image%20%28108%29.png)
+![Inputs](../.gitbook/assets/image%20%28109%29.png)
 
 ![cell outputs](../.gitbook/assets/image%20%2850%29.png)
 
-![hidden states](../.gitbook/assets/image%20%2862%29.png)
+![hidden states](../.gitbook/assets/image%20%2863%29.png)
 
-![gates](../.gitbook/assets/image%20%28110%29.png)
+![gates](../.gitbook/assets/image%20%28111%29.png)
 
-![ConvLSTM](../.gitbook/assets/image%20%2883%29.png)
+![ConvLSTM](../.gitbook/assets/image%20%2884%29.png)
 
 * o 은 element-wise 곱.
 * 별표는 컨볼루션 연산.
 
-![](../.gitbook/assets/image%20%2879%29.png)
+![](../.gitbook/assets/image%20%2880%29.png)
 
 ### 3.2 Encoding-Forecasting Structure
 
