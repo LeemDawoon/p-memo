@@ -20,9 +20,8 @@ description: Semantic Segmentation of Video Sequences with Convolutional LSTMs
   * 따라서 ICNet은 입력 이미지를 1/2과 1/4배로 줄여서 저해상도 이미지에는 복갑한 CNN\(PSPNet\)을 사용하여 feature를 뽑고, 중간 해상도 및 고해상도 이미지에서는 가벼운 CNN 구조를 사용하여 feature를 뽑아 이를 fusion하는 전략을 사용한다.
 * \*\*\*\*[**PSPNet**](https://leemdawoon.gitbook.io/p-memo/computer-vision/2017-pspnet)\*\*\*\*
   * 딥러닝 네트워크에서, 레이어가 깊을수록 전역적 context 정보를 잘 추출하지 못하는 이슈를 해결하기 위해 제안된 모델.
-  * 
-
-
+  * \(context 정보 때문에,  global average pooling을 사용하면,  지역정보를 잃어버리는 현상이 발생...\)
+  * CNN에서 추출된 Feature map을 다양한 크기로 pooling 하여 기존 feature map에 추가해 주면, 지역 정보와 전역 정보를 동시에 사용할 수 있다.
 
 
 
@@ -54,15 +53,15 @@ A. LSTM-SegNet\(패스...\)
 
 B. LSTM-ICNet
 
-![LSTM-ICNet](../.gitbook/assets/image%20%2840%29.png)
+![LSTM-ICNet](../.gitbook/assets/image%20%2847%29.png)
 
 IV. EVALUATION
 
 * LSTM-ICNet version 6가 좋은편.
 
-![](../.gitbook/assets/image%20%2884%29.png)
+![](../.gitbook/assets/image%20%2894%29.png)
 
-![](../.gitbook/assets/image%20%2891%29.png)
+![](../.gitbook/assets/image%20%28101%29.png)
 
 
 

@@ -25,13 +25,17 @@ High Efficiency Semantic Segmentation
 
 Video Semantic Segmentation
 
+
+
+![](../.gitbook/assets/image%20%2856%29.png)
+
 ## 3 Image Cascade Network
 
 3.1 Speed Analysis
 
 ### 3.2 Network Architecture
 
-![](../.gitbook/assets/image%20%2887%29.png)
+![](../.gitbook/assets/image%20%2898%29.png)
 
 * 3.1에서 연산량을 분석해본 결과, 속도를 높이기 위해 이러한 전략들을 사용했다.
   * downsampling input, 
@@ -46,7 +50,7 @@ Video Semantic Segmentation
 
 ### 3.3 Cascade Feature Fusion
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![](../.gitbook/assets/image%20%2813%29.png)
 
 * CFF의 입력은 3가지 컴포넌트로 이루어져 있다:
   * feature map F1 \(C1 X H1 X W1\)
@@ -78,11 +82,11 @@ Video Semantic Segmentation
 * 최소화할 Loss:
   * The corresponding ground truth label for 2D position \(y, x\) is **n^**
 
-![Loss](../.gitbook/assets/image%20%2845%29.png)
+![Loss](../.gitbook/assets/image%20%2853%29.png)
 
-![branch t&#xC5D0;&#xC11C;&#xC758; predicted feature map](../.gitbook/assets/image%20%2893%29.png)
+![branch t&#xC5D0;&#xC11C;&#xC758; predicted feature map](../.gitbook/assets/image%20%28104%29.png)
 
-![Branch t&#xC758; Loss&#xC758; &#xAC00;&#xC911;&#xCE58;](../.gitbook/assets/image%20%2818%29.png)
+![Branch t&#xC758; Loss&#xC758; &#xAC00;&#xC911;&#xCE58;](../.gitbook/assets/image%20%2821%29.png)
 
 ## 4 Structure Comparison and Analysis
 

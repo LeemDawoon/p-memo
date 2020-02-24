@@ -19,17 +19,17 @@ description: >-
   * P는 시간에 따른 측정값.
   * 시간에 따른 관찰값은 아래와 같이 X로 표현.
 
-![](../.gitbook/assets/image%20%2833%29.png)
+![](../.gitbook/assets/image%20%2840%29.png)
 
 * 일정시간 간격으로 관찰하면, 다음과 같은 sequence 데이터를 얻을 수 있다.
   * 
 
-![](../.gitbook/assets/image%20%2880%29.png)
+![](../.gitbook/assets/image%20%2891%29.png)
 
 * 시공간적 예측문제\(spatiotemporal sequence forecasting problem\)는. 아래과 같은 식으로 표현될 수있다. J개의 관찰값이 주어졌을 때, K개의 값을 예측.
   * 
 
-![](../.gitbook/assets/image%20%2839%29.png)
+![](../.gitbook/assets/image%20%2846%29.png)
 
 ## 3 The Model
 
@@ -39,24 +39,24 @@ description: >-
 
 ![LSTM](../.gitbook/assets/image%20%287%29.png)
 
-![Inputs](../.gitbook/assets/image%20%2897%29.png)
+![Inputs](../.gitbook/assets/image%20%28108%29.png)
 
-![cell outputs](../.gitbook/assets/image%20%2842%29.png)
+![cell outputs](../.gitbook/assets/image%20%2850%29.png)
 
-![hidden states](../.gitbook/assets/image%20%2853%29.png)
+![hidden states](../.gitbook/assets/image%20%2862%29.png)
 
-![gates](../.gitbook/assets/image%20%2899%29.png)
+![gates](../.gitbook/assets/image%20%28110%29.png)
 
-![ConvLSTM](../.gitbook/assets/image%20%2873%29.png)
+![ConvLSTM](../.gitbook/assets/image%20%2883%29.png)
 
 * o 은 element-wise 곱.
 * 별표는 컨볼루션 연산.
 
-![](../.gitbook/assets/image%20%2869%29.png)
+![](../.gitbook/assets/image%20%2879%29.png)
 
 ### 3.2 Encoding-Forecasting Structure
 
-![](../.gitbook/assets/image%20%2816%29.png)
+![](../.gitbook/assets/image%20%2818%29.png)
 
 * encoding network와  forecasting network 2가지 네트워크로 구성된다.
 * 두 네트워크는 ConvLSTM 가 쌓여서 구성된다.
@@ -67,7 +67,7 @@ description: >-
   * forecasting network 의 모든 state를 concat하여 1x1 conv에 통과하여 최종 예측 output을 얻는다.
   * 최종 prediction은 input과 차원이 같다.
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image%20%289%29.png)
 
 
 
