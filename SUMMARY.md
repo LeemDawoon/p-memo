@@ -31,6 +31,7 @@
 * [\(2016\) Dilated Convolution](computer-vision/2016-dilated-convoloution.md)
 * [\(2019\) FEELVOS](computer-vision/2019-feelvos.md)
 * [\(2018\) PML](computer-vision/2018-pml.md)
+* [\(2018\) RGMP](computer-vision/2018-rgmp.md)
 
 ## ETC
 
