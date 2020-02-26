@@ -22,7 +22,7 @@ description: >-
 
 ### A. Overall Framework 
 
-![](../.gitbook/assets/image%20%2819%29.png)
+![](../.gitbook/assets/image%20%2820%29.png)
 
 * The overall pipeline of our approach is shown in Fig. 1. 
 * Given an image, we initially resize it to different scales to build an image pyramid, which is the input of the following three-stage cascaded framework: 
@@ -60,18 +60,18 @@ description: >-
 
 * 1\) Face classification: 
   * 얼굴인지 아닌지 구분하는 테스크로 loss는 cross entropy.
-  * ![](../.gitbook/assets/image%20%2887%29.png)
+  * ![](../.gitbook/assets/image%20%2888%29.png)
 * 2\) Bounding box regression: 
   * 각각의 window에 대해서, 가까운 ground truth 간의 offset을 예측\(left, top, height, width\). loss는 regression.
   * ![](../.gitbook/assets/image%20%2811%29.png)
 * 3\) Facial landmark localization: 
   * 이것도 regression.
   * landmark는 left eye, right eye, nose, left mouth corner, and right mouth corner 로 5개이고, 좌표이기 때문에, 차원은 10.
-  * ![](../.gitbook/assets/image%20%2817%29.png)
+  * ![](../.gitbook/assets/image%20%2818%29.png)
 * 4\) Multi-source training:
   * Eq. \(1\)-\(3\)를 모두 쓰지는 않는데, 예를 들어, 배경영역의 경우 식\(1\)만 계산하고 나머지 Loss는 0으로 설정한다. 이는 type indicator\(_β\) 로 구현된다._
   * task별 가중치\(α\)를 줘서 식\(4\)처럼 한다.
-  * ![](../.gitbook/assets/image%20%2857%29.png)
+  * ![](../.gitbook/assets/image%20%2858%29.png)
     * α: Task의 중요도를 나타내는 가중치.
       * P-Net와 R-Net의 경우:  α-det = 1,  α-box=0.5, α-landmark=0.5
       * O-Net의 경우:  α-det = 1,  α-box=0.1, α-landmark=0.5

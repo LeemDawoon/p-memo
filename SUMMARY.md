@@ -32,6 +32,7 @@
 * [\(2019\) FEELVOS](computer-vision/2019-feelvos.md)
 * [\(2018\) PML](computer-vision/2018-pml.md)
 * [\(2018\) RGMP](computer-vision/2018-rgmp.md)
+* [\(2019\) YOLACT](computer-vision/2019-yolact.md)
 
 ## ETC
 

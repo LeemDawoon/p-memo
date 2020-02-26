@@ -17,7 +17,7 @@ description: 'CXNet-m1: Anomaly Detection on Chest X-Rays with Image-Based Deep 
 
 ### A. HIERARCHICAL STRUCTURE:
 
-![](../.gitbook/assets/image%20%2836%29.png)
+![](../.gitbook/assets/image%20%2837%29.png)
 
 * CXNet -m1: Normal/Abnormal을 분류.
 * CXNet -m2: Abnormal 데이터가 Multi-label인지 Single Label 인지 분류.
@@ -32,14 +32,14 @@ description: 'CXNet-m1: Anomaly Detection on Chest X-Rays with Image-Based Deep 
   * \(4\)식이 일반적인 cross entropy에 대한 식이고, \(10\)식이 sin-loss에 대한 식인데, 차이점은 곱해지는 베타라고 볼수 있다.
   * 식\(9\)는 베타에 대한 식.
 
-![](../.gitbook/assets/image%20%28100%29.png)
+![](../.gitbook/assets/image%20%28102%29.png)
 
-![](../.gitbook/assets/image%20%28104%29.png)
+![](../.gitbook/assets/image%20%28106%29.png)
 
 * 2\) Model Architecture:
   * CXNet-m1 \(Chest X-ray Network-model 1\)
 
-![](../.gitbook/assets/image%20%2826%29.png)
+![](../.gitbook/assets/image%20%2827%29.png)
 
 ## Experiments
 
@@ -47,9 +47,9 @@ description: 'CXNet-m1: Anomaly Detection on Chest X-Rays with Image-Based Deep 
 
 * It contains more than 30,000 patients, 297,541 labeled chest x-ray images and 14 kinds abnormal images including Infiltration, Effusion, Atelectasis, Nodule, Mass, Pneumothorax, Consolidation, Pleural Thickening, Cardiomegaly, Emphysema, Edema, Fibrosis, Pneumonia and Hernia.
 
-![](../.gitbook/assets/image%20%2858%29.png)
+![](../.gitbook/assets/image%20%2859%29.png)
 
-![](../.gitbook/assets/image%20%2883%29.png)
+![](../.gitbook/assets/image%20%2884%29.png)
 
 B. METRICS
 
@@ -63,7 +63,7 @@ C. TRAINING
 * learning rate of 0.01, decayed by a factor of 2 or 5 or 10 manually through monitoring the loss curve in TensorBoard.
 * The networks were validated against the validation set after every 3000 iterations
 
-![](../.gitbook/assets/image%20%2825%29.png)
+![](../.gitbook/assets/image%20%2826%29.png)
 
 ![](../.gitbook/assets/image%20%282%29.png)
 
