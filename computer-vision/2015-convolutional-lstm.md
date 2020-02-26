@@ -39,13 +39,13 @@ description: >-
 
 ![LSTM](../.gitbook/assets/image%20%287%29.png)
 
-![Inputs](../.gitbook/assets/image%20%28111%29.png)
+![Inputs](../.gitbook/assets/image%20%28112%29.png)
 
 ![cell outputs](../.gitbook/assets/image%20%2851%29.png)
 
 ![hidden states](../.gitbook/assets/image%20%2864%29.png)
 
-![gates](../.gitbook/assets/image%20%28113%29.png)
+![gates](../.gitbook/assets/image%20%28114%29.png)
 
 ![ConvLSTM](../.gitbook/assets/image%20%2885%29.png)
 

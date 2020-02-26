@@ -24,7 +24,7 @@ description: >-
 
 
 
-![standard convolution &#xACC4;&#xC0B0;&#xC2DD;\(stride-1, padding-1\)&#xC774;&#xB77C;&#xACE0; &#xAC00;&#xC815;.](../.gitbook/assets/image%20%28100%29.png)
+![standard convolution &#xACC4;&#xC0B0;&#xC2DD;\(stride-1, padding-1\)&#xC774;&#xB77C;&#xACE0; &#xAC00;&#xC815;.](../.gitbook/assets/image%20%28101%29.png)
 
 * F: Input feature map
   * **D**F × **D**F × **M**
@@ -42,7 +42,7 @@ description: >-
   * depthwise convolutions : 
     * input channel을 filtering 하는 효과.
     * m-th 필터\(channel\)에 대해서 계산한 depthwise convolution 결과.
-      * ![](../.gitbook/assets/image%20%28115%29.png)
+      * ![](../.gitbook/assets/image%20%28116%29.png)
     * 계산 비용:
       * ![](../.gitbook/assets/image%20%2891%29.png)
   * pointwise convolutions: 

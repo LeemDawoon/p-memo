@@ -19,7 +19,7 @@ BiFPN: efficient bidirectional cross-scale connections and weighted feature fusi
 *  Multi-scale feature fusion의 목적은 다른 resolution의 feature를 통합하는 것이다.
 * 이를 공식화 하면 다음과 같다:
 
-![](../.gitbook/assets/image%20%28108%29.png)
+![](../.gitbook/assets/image%20%28109%29.png)
 
 * 우리의 목표는 multi-scale feature의 리스트인 P-in 이 주어 졌을때, 그것을 효과적으로 통합하여 P-out을 내뱉는 함수 f를 찾는 것이다.
 
@@ -28,7 +28,7 @@ BiFPN: efficient bidirectional cross-scale connections and weighted feature fusi
 * P-in의 하위 첨자는 레벨을 뜻한다.
 * 전통적인 FPN은 multi-scale features를 top-down 방식으로 통합한다.
 
-![](../.gitbook/assets/image%20%28109%29.png)
+![](../.gitbook/assets/image%20%28110%29.png)
 
 ### 3.2. Cross-Scale Connections
 
