@@ -34,6 +34,7 @@
 * [\(2018\) RGMP](computer-vision/2018-rgmp.md)
 * [\(2019\) YOLACT](computer-vision/2019-yolact.md)
 * [\(2019\) HarDNet](computer-vision/2019-hardnet.md)
+* [\(2019\) C-MIL](computer-vision/2019-c-mil.md)
 
 ## ETC
 
