@@ -59,6 +59,27 @@ description: A Simple Baseline for Multi-Object Tracking
 
 ### 3.2 Object Detection Branch
 
+* bbox의 center를 추정하기 떄문에,  3개의 병렬 regression head를 가진다.
+* 각 head는 backbone의 output feature를 입력으로 하여, 3x3 conv\(n\_filter=256\)과 1x1 conv를 거친다.
+* Heatmap Head: 
+* Center Offset Head:
+* Box Size Head: 
+
+### 3.3 Identity Embedding Branch
+
+* 다른 물체를 구별할 수 있는 feature를 만드는 branch 이다.
+* 이상적으로 동일한 물체간의 distance는 distance보다 커야 한다.
+* 각 location 마다  identity embedding features를 추출하기 위해, conv\(n\_filter=128\)를 적용하였다.
+* 이 결과 feature map은 128 X W X H의 차원을 가진다.
+
+### 3.4 Loss Functions
+
+* Heatmap Loss:
+  * 
+* Offset and Size Loss:
+* Identity Embedding Loss:
 * 
+
+
 
 
