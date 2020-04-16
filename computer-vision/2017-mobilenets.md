@@ -24,7 +24,7 @@ description: >-
 
 
 
-![standard convolution &#xACC4;&#xC0B0;&#xC2DD;\(stride-1, padding-1\)&#xC774;&#xB77C;&#xACE0; &#xAC00;&#xC815;.](../.gitbook/assets/image%20%28105%29.png)
+![standard convolution &#xACC4;&#xC0B0;&#xC2DD;\(stride-1, padding-1\)&#xC774;&#xB77C;&#xACE0; &#xAC00;&#xC815;.](../.gitbook/assets/image%20%28106%29.png)
 
 * F: Input feature map
   * **D**F × **D**F × **M**
@@ -36,13 +36,13 @@ description: >-
 * K: Convolution Kernel
   * **D**K ×**D**K ×**M**×**N**
 
-![&#xC2DD;\(1\)&#xC758;  computational cost ](../.gitbook/assets/image%20%28101%29.png)
+![&#xC2DD;\(1\)&#xC758;  computational cost ](../.gitbook/assets/image%20%28102%29.png)
 
 * Depthwise separable convolution를 구성하는 2가지 레이어.
   * depthwise convolutions : 
     * input channel을 filtering 하는 효과.
     * m-th 필터\(channel\)에 대해서 계산한 depthwise convolution 결과.
-      * ![](../.gitbook/assets/image%20%28125%29.png)
+      * ![](../.gitbook/assets/image%20%28127%29.png)
     * 계산 비용:
       * ![](../.gitbook/assets/image%20%2894%29.png)
   * pointwise convolutions: 

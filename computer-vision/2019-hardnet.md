@@ -21,7 +21,7 @@ description: 'HarDNet: A Low Memory Traffic Network'
 * 이러한 connection scheme에서,  2^n 번째 레이어가 처리되었을때, 1부터 2^n -1까지의 레이어는메모리로 부터 flush 될수 있다.
 * The connections make the network appear as an overlapping of power-of-two-th harmonic waves\(아래 그림 참조\)
 * 
-![](../.gitbook/assets/image%20%28103%29.png)
+![](../.gitbook/assets/image%20%28104%29.png)
 
 * In the proposed network, layers with an index divided by a larger power of two are more influential than those that divided by a smaller power of two.
 *  We amplify these key layers by increasing their channels, which can balance the channel ratio between the input and output of a layer to avoid a low MoC

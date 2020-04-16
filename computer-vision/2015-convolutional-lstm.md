@@ -24,7 +24,7 @@ description: >-
 * 일정시간 간격으로 관찰하면, 다음과 같은 sequence 데이터를 얻을 수 있다.
   * 
 
-![](../.gitbook/assets/image%20%2897%29.png)
+![](../.gitbook/assets/image%20%2898%29.png)
 
 * 시공간적 예측문제\(spatiotemporal sequence forecasting problem\)는. 아래과 같은 식으로 표현될 수있다. J개의 관찰값이 주어졌을 때, K개의 값을 예측.
   * 
@@ -39,13 +39,13 @@ description: >-
 
 ![LSTM](../.gitbook/assets/image%20%288%29.png)
 
-![Inputs](../.gitbook/assets/image%20%28120%29.png)
+![Inputs](../.gitbook/assets/image%20%28121%29.png)
 
 ![cell outputs](../.gitbook/assets/image%20%2853%29.png)
 
 ![hidden states](../.gitbook/assets/image%20%2866%29.png)
 
-![gates](../.gitbook/assets/image%20%28122%29.png)
+![gates](../.gitbook/assets/image%20%28123%29.png)
 
 ![ConvLSTM](../.gitbook/assets/image%20%2888%29.png)
 

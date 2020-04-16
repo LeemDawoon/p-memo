@@ -32,9 +32,9 @@ description: 'CXNet-m1: Anomaly Detection on Chest X-Rays with Image-Based Deep 
   * \(4\)식이 일반적인 cross entropy에 대한 식이고, \(10\)식이 sin-loss에 대한 식인데, 차이점은 곱해지는 베타라고 볼수 있다.
   * 식\(9\)는 베타에 대한 식.
 
-![](../.gitbook/assets/image%20%28108%29.png)
+![](../.gitbook/assets/image%20%28109%29.png)
 
-![](../.gitbook/assets/image%20%28113%29.png)
+![](../.gitbook/assets/image%20%28114%29.png)
 
 * 2\) Model Architecture:
   * CXNet-m1 \(Chest X-ray Network-model 1\)

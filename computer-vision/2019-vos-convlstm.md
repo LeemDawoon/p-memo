@@ -60,9 +60,9 @@ IV. EVALUATION
 
 * LSTM-ICNet version 6가 좋은편.
 
-![](../.gitbook/assets/image%20%28100%29.png)
+![](../.gitbook/assets/image%20%28101%29.png)
 
-![](../.gitbook/assets/image%20%28111%29.png)
+![](../.gitbook/assets/image%20%28112%29.png)
 
 
 
