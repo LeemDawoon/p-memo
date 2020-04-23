@@ -37,6 +37,7 @@
 * [\(2019\) Survey - MOT](computer-vision/2019-survey-mot.md)
 * [\(2019\) C-MIL](computer-vision/2019-c-mil.md)
 * [\(2020\) One-shot MOT](computer-vision/2020-one-shot-mot.md)
+* [\(2019\) PANet](computer-vision/2019-panet.md)
 
 ## ETC
 
