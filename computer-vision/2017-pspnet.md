@@ -96,7 +96,7 @@ description: Pyramid Scene Parsing Network
 
 ## 5. Experiments
 
-![](../.gitbook/assets/image%20%2885%29.png)
+![](../.gitbook/assets/image%20%2887%29.png)
 
  
 

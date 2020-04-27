@@ -19,7 +19,7 @@ description: 'Deep Learning based HEp-2 Image Classification: A Comprehensive Re
 
 
 
-1 Introduction
+## 1 Introduction
 
 * Indirect immunofluorescence \(IIF\)은 autoimmune diseases 진단에 표준 검사방법.
 * autoimmune diseases 에는 rheumatoid arthritis\(류마티스 관절염\), pulmonary fibrosis\(폐 섬유,\) Sjogren’s syndrom, and Addison disease. 등이 있다.
@@ -28,4 +28,66 @@ description: 'Deep Learning based HEp-2 Image Classification: A Comprehensive Re
 * 하지만 다음과 같은 아주 적은 수의 패턴만 진단 목적으로 쓸만한다:
   * homogeneous\(균질\), nucleolar\(핵\), centromereseen, cytoplasmatic, fine speckled\(미세 얼룩\), coarse speckled\(거친얼룩\), cytoplasmatic, nucleolar membrane\(핵막\), and golgi.
 *  Anti Nuclear Antibodies \(_ANA_\)
+
+## 3 Deep Learning for HEp-2 Image Classification
+
+### 3.1 Cell-level HEp-2 image classification \(CL-HEP2IC\) methods
+
+\(생략\)
+
+### 3.2 Specimen-level HEp-2 image classification \(SL-HEP2IC\) methods
+
+![](../.gitbook/assets/image%20%28103%29.png)
+
+
+
+#### 3.2.1 Single cell processing based specimen-level HEp-2 image classification methods \(SCP-SL-HEP2IC\)
+
+* bounding box나 segmentation mask로 cell 을 검출 한 뒤, cell image를 분류한다.
+* \[46\] Deep CNN for IIF Images Classification in Autoimmune Diagnostics
+
+#### 3.2.2 Multi-cell processing based specimen-level HEp-2 image classification methods \(MCP-SL-HEP2IC\)
+
+**Pixel-wise prediction based methods.**
+
+* 픽셀 단위로 classification. \(그냥 여러 클래스를 segmentation 한다고 보면된다.\)
+* **\[63\] Deeply supervised full convolution network for HEp-2 specimen image segmentation**
+
+  \*\*\*\*
+
+![Results of \[63\]](../.gitbook/assets/image%20%2879%29.png)
+
+* segmentation accuracy \(SEG\), sensitivity \(SE\), Jaccard index \(JA\) and accuracy \(AC\)
+* Crop + Mirror + Rotate \(CMR\)
+* hierarchical supervision structure \(HS\)
+
+
+
+**Image-wise prediction based methods.**
+
+
+
+
+
+## 4 HEp-2 Public Datasets
+
+![](../.gitbook/assets/image%20%2876%29.png)
+
+4.1 ICPR 2012 dataset
+
+
+
+4.2 SNHEp-2 dataset
+
+* There are 1,884 cell images extracted from 40 specimen images. 
+* The specimen images are divided into training and testing sets with 20 images each \(4 images for each pattern\). In total there are 905 and 979 cell images extracted for training and testing. 
+* Five-fold validation of training and testing were created by randomly selecting the training and test images. Both training and testing in each fold contain around 900 cell images \(approx. 450 images each\).
+
+4.3 ICPR 2014 dataset
+
+
+
+4.4 AIDA dataset
+
+
 
