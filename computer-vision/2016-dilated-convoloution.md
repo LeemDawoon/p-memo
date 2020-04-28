@@ -11,7 +11,7 @@ description: MULTI-SCALE CONTEXT AGGREGATION BY DILATED CONVOLUTIONS
 
 ## Receptive Field ?!
 
-![](../.gitbook/assets/image%20%2880%29.png)
+![](../.gitbook/assets/image%20%2881%29.png)
 
 * 위 그림 설명:
   * 일반적인 convolution에서 receptive field 는 좌측 입력 레이어의 중앙 진분홍색 공간이 된다.

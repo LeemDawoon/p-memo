@@ -30,13 +30,13 @@ description: Focal Loss for Dense Object Detection
 
 ### 1. Balanced Cross Entropy
 
-![](../.gitbook/assets/image%20%2886%29.png)
+![](../.gitbook/assets/image%20%2888%29.png)
 
 * 불균형을 다룰때, 보통은 weight로 클래스 빈도수의 역수인  α 를 곱해준다.
 
 ### 2. Focal Loss Definition
 
-![](../.gitbook/assets/image%20%2883%29.png)
+![](../.gitbook/assets/image%20%2884%29.png)
 
 * 감마 값이 0이면 일반 Cross Entropy와 동일하다.
 * 본 논문에서는 2일때의 실험 결과가 가장 좋다고 한다.
