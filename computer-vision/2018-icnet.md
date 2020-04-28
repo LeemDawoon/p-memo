@@ -27,7 +27,7 @@ Video Semantic Segmentation
 
 
 
-![](../.gitbook/assets/image%20%2863%29.png)
+![](../.gitbook/assets/image%20%2867%29.png)
 
 ## 3 Image Cascade Network
 
@@ -35,7 +35,7 @@ Video Semantic Segmentation
 
 ### 3.2 Network Architecture
 
-![](../.gitbook/assets/image%20%28119%29.png)
+![](../.gitbook/assets/image%20%28124%29.png)
 
 * 3.1에서 연산량을 분석해본 결과, 속도를 높이기 위해 이러한 전략들을 사용했다.
   * downsampling input, 
@@ -82,11 +82,11 @@ Video Semantic Segmentation
 * 최소화할 Loss:
   * The corresponding ground truth label for 2D position \(y, x\) is **n^**
 
-![Loss](../.gitbook/assets/image%20%2860%29.png)
+![Loss](../.gitbook/assets/image%20%2864%29.png)
 
-![branch t&#xC5D0;&#xC11C;&#xC758; predicted feature map](../.gitbook/assets/image%20%28127%29.png)
+![branch t&#xC5D0;&#xC11C;&#xC758; predicted feature map](../.gitbook/assets/image%20%28132%29.png)
 
-![Branch t&#xC758; Loss&#xC758; &#xAC00;&#xC911;&#xCE58;](../.gitbook/assets/image%20%2824%29.png)
+![Branch t&#xC758; Loss&#xC758; &#xAC00;&#xC911;&#xCE58;](../.gitbook/assets/image%20%2825%29.png)
 
 ## 4 Structure Comparison and Analysis
 

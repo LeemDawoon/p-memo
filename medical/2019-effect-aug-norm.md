@@ -69,7 +69,7 @@ Our contributions can be summarized as follows:
 
 3.1. Stain color augmentation
 
-![](../.gitbook/assets/image%20%2882%29.png)
+![](../.gitbook/assets/image%20%2887%29.png)
 
 * **Basic**:  90 degree rotations / vertical and horizontal mirroring.
 * **Morphology:**
@@ -120,7 +120,7 @@ tf~~.~~keras.preprocessing.image.ImageDataGenerator\(zoom\_range\)
 
 3.2. Stain color normalization
 
-![](../.gitbook/assets/image%20%28107%29.png)
+![](../.gitbook/assets/image%20%28112%29.png)
 
 * Identity: baseline. 아무것도 안한.
 * Grayscale:
@@ -146,7 +146,7 @@ tf~~.~~keras.preprocessing.image.ImageDataGenerator\(zoom\_range\)
 
 ## 4. Experimental results
 
-![](../.gitbook/assets/image%20%2832%29.png)
+![](../.gitbook/assets/image%20%2833%29.png)
 
 * best는 
   * Network-based Normalization 후, HSV-light

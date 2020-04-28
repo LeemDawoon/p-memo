@@ -28,6 +28,7 @@
 * [\(2015\) Convolutional LSTM](computer-vision/2015-convolutional-lstm.md)
 * [\(2018\) ICNet](computer-vision/2018-icnet.md)
 * [\(2017\) PSPNet](computer-vision/2017-pspnet.md)
+* [\(2018\) EncNet](computer-vision/2018-encnet.md)
 * [\(2016\) Dilated Convolution](computer-vision/2016-dilated-convoloution.md)
 * [\(2019\) FEELVOS](computer-vision/2019-feelvos.md)
 * [\(2018\) PML](computer-vision/2018-pml.md)
@@ -39,6 +40,7 @@
 * [\(2020\) One-shot MOT](computer-vision/2020-one-shot-mot.md)
 * [\(2019\) PANet](computer-vision/2019-panet.md)
 * [\(2019\) Survey: HEp-2](computer-vision/2019-survey-hep-2.md)
+* [\(2019\) OCR](computer-vision/2019-ocr.md)
 
 ## ETC
 
