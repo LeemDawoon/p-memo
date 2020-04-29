@@ -34,11 +34,7 @@ description: Deep High-Resolution Representation Learning for Visual Recognition
 * **Maintaining high-resolution representations:**
 * **Multi-scale fusion:**
 
-
-
 ## 3 HIGH-RESOLUTION NETWORKS
-
-
 
 ![](../.gitbook/assets/image%20%2861%29.png)
 
@@ -64,9 +60,7 @@ description: Deep High-Resolution Representation Learning for Visual Recognition
 
 ![](../.gitbook/assets/image%20%2830%29.png)
 
-## 3.3 Representation Head
-
-
+### 3.3 Representation Head
 
 * **HRNetV1.** The output is the representation only from the high-resolution stream. Other three representations are ignored. 
 * **HRNetV2.** We rescale the low-resolution representations through bilinear upsampling without changing the number of channels to the high resolution, and concatenate the four representations, followed by a 1 × 1 convolution to mix the four representations.
