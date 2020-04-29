@@ -74,3 +74,9 @@ description: Deep High-Resolution Representation Learning for Visual Recognition
 
 
 
+* HRNet-W32에서 32는 채널 수를 의미하는데,  HRNet-W32의 경우에는, resolution 별로\(그림에서 블럭 색깔별로\) 32, 64, 128, 256 채널을 유지한다. 
+
+
+
+
+
