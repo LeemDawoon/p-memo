@@ -37,7 +37,7 @@ description: 'Deep Learning based HEp-2 Image Classification: A Comprehensive Re
 
 ### 3.2 Specimen-level HEp-2 image classification \(SL-HEP2IC\) methods
 
-![](../.gitbook/assets/image%20%28111%29.png)
+![](../.gitbook/assets/image%20%28113%29.png)
 
 
 
@@ -55,7 +55,7 @@ description: 'Deep Learning based HEp-2 Image Classification: A Comprehensive Re
 
   \*\*\*\*
 
-![Results of \[63\]](../.gitbook/assets/image%20%2886%29.png)
+![Results of \[63\]](../.gitbook/assets/image%20%2887%29.png)
 
 * segmentation accuracy \(SEG\), sensitivity \(SE\), Jaccard index \(JA\) and accuracy \(AC\)
 * Crop + Mirror + Rotate \(CMR\)
@@ -71,7 +71,7 @@ description: 'Deep Learning based HEp-2 Image Classification: A Comprehensive Re
 
 ## 4 HEp-2 Public Datasets
 
-![](../.gitbook/assets/image%20%2883%29.png)
+![](../.gitbook/assets/image%20%2884%29.png)
 
 4.1 ICPR 2012 dataset
 

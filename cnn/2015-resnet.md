@@ -34,12 +34,12 @@ description: Deep Residual Learning for Image Recognition
 ### 2. Identity Mapping by Shortcuts
 
 * Figure 2의 building block 정의:
-  * ![](../.gitbook/assets/image%20%2879%29.png)
+  * ![](../.gitbook/assets/image%20%2880%29.png)
   * Shortcut Connections: 좌측텀과 우측텀을 연결하는 element-wise addition
 
 ### 3. Deeper Bottleneck Architectures
 
-![](../.gitbook/assets/image%20%2864%29.png)
+![](../.gitbook/assets/image%20%2865%29.png)
 
 * 좌측과 우측의 time complexity는 유사.
 * 우측과 같은 bottleneck 구조가 더 낫다고 함.

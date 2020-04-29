@@ -36,11 +36,11 @@ description: Deep High-Resolution Representation Learning for Visual Recognition
 
 
 
-3 HIGH-RESOLUTION NETWORKS
+## 3 HIGH-RESOLUTION NETWORKS
 
 
 
-![](../.gitbook/assets/image%20%2859%29.png)
+![](../.gitbook/assets/image%20%2860%29.png)
 
 * 처음 입력이미지를 stride2 3×3 convolutions을 거쳐서 입력이미지 해상도의 1/4로 줄이는데, 이 resolution을 계속 유지한다.
 * 세부적으로는 다음과 같은 컴포넌트들로 구성된다.
@@ -48,7 +48,16 @@ description: Deep High-Resolution Representation Learning for Visual Recognition
   * repeated multi-resolution fusions
   * representation head
 
+![](../.gitbook/assets/image%20%2853%29.png)
 
+### 3.1 Parallel Multi-Resolution Convolutions
+
+![](../.gitbook/assets/image%20%28110%29.png)
+
+* $$ N_{sr}$$은 s-th 번째 stage에 r resolution index를 가지는 sub-stream.
+* r에 해당하는 resolution은 $$ 1/2^{r-1}$$
+
+### 3.2 Repeated Multi-Resolution Fusions
 
 
 

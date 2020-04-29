@@ -26,7 +26,7 @@ description: 'MobileNetV2: Inverted Residuals and Linear Bottlenecks'
     * 1. ReLU 연산후,  manifold of interest가 0이 아닌 volume을 유지하면, 이는 선형 변환에 해당한다.
       2. 입력 매니 폴드가 입력 공간의 저 차원 하위 공간에있는 경우, ReLU는 입력 매니 폴드에 대한 완전한 정보를 보존 할 수 있다.
 
-![](../.gitbook/assets/image%20%28143%29.png)
+![](../.gitbook/assets/image%20%28145%29.png)
 
 * 2d 에서 보듯이, 첫번째 레이어가 채널을 확장하는 역할을 하고 뒤에 두 레이어는 Depthwise Separable Convolution 이다. 
 
@@ -34,11 +34,11 @@ description: 'MobileNetV2: Inverted Residuals and Linear Bottlenecks'
 
 * ResNet 처럼 shortcut connection을 사용하는데,  3b 처럼 채널 수가 적은 텐서를 연결하는 것이 더 메모리 효율적이다.
 
-![](../.gitbook/assets/image%20%28141%29.png)
+![](../.gitbook/assets/image%20%28143%29.png)
 
 ### 4. 전체구조
 
-![](../.gitbook/assets/image%20%2894%29.png)
+![](../.gitbook/assets/image%20%2895%29.png)
 
 ![](../.gitbook/assets/image%20%2839%29.png)
 
