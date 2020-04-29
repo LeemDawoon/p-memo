@@ -22,7 +22,7 @@ description: Focal Loss for Dense Object Detection
 * y: 0 또는 1의 값\(Ground Truth\)
 * p: 0~1 사이의 값\(예측확률\)
 
-![&#xD3B8;&#xC758;&#xB97C; &#xC704;&#xD574; pt&#xB97C; &#xC815;&#xC758;\)](../.gitbook/assets/image%20%2855%29.png)
+![&#xD3B8;&#xC758;&#xB97C; &#xC704;&#xD574; pt&#xB97C; &#xC815;&#xC758;\)](../.gitbook/assets/image%20%2856%29.png)
 
 *  CE\(p, y\) = CE\(pt\) = − log\(pt\)
 
@@ -30,19 +30,19 @@ description: Focal Loss for Dense Object Detection
 
 ### 1. Balanced Cross Entropy
 
-![](../.gitbook/assets/image%20%2890%29.png)
+![](../.gitbook/assets/image%20%2891%29.png)
 
 * 불균형을 다룰때, 보통은 weight로 클래스 빈도수의 역수인  α 를 곱해준다.
 
 ### 2. Focal Loss Definition
 
-![](../.gitbook/assets/image%20%2886%29.png)
+![](../.gitbook/assets/image%20%2887%29.png)
 
 * 감마 값이 0이면 일반 Cross Entropy와 동일하다.
 * 본 논문에서는 2일때의 실험 결과가 가장 좋다고 한다.
 * 아래 그래프를 보면 잘 분류된 데이터에 대해서는 로스가 크게 작아짐
 
-![](../.gitbook/assets/image%20%2857%29.png)
+![](../.gitbook/assets/image%20%2858%29.png)
 
 ## RetinaNet Detector
 

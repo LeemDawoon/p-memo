@@ -40,7 +40,7 @@ description: Deep High-Resolution Representation Learning for Visual Recognition
 
 
 
-![](../.gitbook/assets/image%20%2860%29.png)
+![](../.gitbook/assets/image%20%2861%29.png)
 
 * 처음 입력이미지를 stride2 3×3 convolutions을 거쳐서 입력이미지 해상도의 1/4로 줄이는데, 이 resolution을 계속 유지한다.
 * 세부적으로는 다음과 같은 컴포넌트들로 구성된다.
@@ -48,16 +48,33 @@ description: Deep High-Resolution Representation Learning for Visual Recognition
   * repeated multi-resolution fusions
   * representation head
 
-![](../.gitbook/assets/image%20%2853%29.png)
+![](../.gitbook/assets/image%20%2854%29.png)
 
 ### 3.1 Parallel Multi-Resolution Convolutions
 
-![](../.gitbook/assets/image%20%28110%29.png)
+![](../.gitbook/assets/image%20%28111%29.png)
 
 * $$ N_{sr}$$은 s-th 번째 stage에 r resolution index를 가지는 sub-stream.
 * r에 해당하는 resolution은 $$ 1/2^{r-1}$$
 
 ### 3.2 Repeated Multi-Resolution Fusions
+
+* The goal of the fusion module is to exchange the information across multi-resolution representations
+* It is repeated several times \(e.g., every 4 residual units\)
+
+![](../.gitbook/assets/image%20%2830%29.png)
+
+## 3.3 Representation Head
+
+
+
+* **HRNetV1.** The output is the representation only from the high-resolution stream. Other three representations are ignored. 
+* **HRNetV2.** We rescale the low-resolution representations through bilinear upsampling without changing the number of channels to the high resolution, and concatenate the four representations, followed by a 1 × 1 convolution to mix the four representations.
+* **HRNetV2p.** We construct multi-level representations by downsampling the high-resolution representation output from HRNetV2 to multiple levels.
+
+![](../.gitbook/assets/image%20%28121%29.png)
+
+* In this paper, we will show the results of applying HRNetV1 to human pose estimation, HRNetV2 to semantic segmentation, and HRNetV2p to object detection.
 
 
 
