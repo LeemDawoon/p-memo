@@ -26,13 +26,13 @@ description: A Simple Baseline for Multi-Object Tracking
   * **\(3\) Dimensionality of the ReID Features**
     * ReID 보다 학습 데이터가 적어서  ReID feature는 차원 수가 작을 수록 더 좋았다. 
 
-![](../.gitbook/assets/image%20%28146%29.png)
+![](../.gitbook/assets/image%20%28147%29.png)
 
 
 
 * 위 요소를 분석해서, 적용한 simple baseline을 제안한다.
 
-![](../.gitbook/assets/image%20%28112%29.png)
+![](../.gitbook/assets/image%20%28113%29.png)
 
 * high-resolution feature map 에서 object center를 추정하기 위해, anchor-free object detection 방식을 채택한다.
 * object의 id를 예측하는데 사용되는 pixel-wise Re-ID features를 추정하기 위해, 병렬적으로 branch 하나를 추가한다.

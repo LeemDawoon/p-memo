@@ -13,12 +13,7 @@
 ## Computer Vision
 
 * [Untitled](computer-vision/untitled.md)
-* [\(2015\) ResNet](computer-vision/2015-resnet.md)
-* [\(2015\) YOLO](computer-vision/2015-yolo.md)
-* [\(2016\) SSD](computer-vision/2016-ssd.md)
-* [\(2017\) MobileNets](computer-vision/2017-mobilenets.md)
 * [\(2018\) RetinaNet & Focal Loss](computer-vision/2018-retinanet-and-focal-loss.md)
-* [\(2019\) MobileNetV2](computer-vision/2019-mobilenetv2.md)
 * [\_\(2016\) YOLO V2](computer-vision/_-2016-yolo-v2.md)
 * [\_\(2018\) Noise2Noise](computer-vision/_-2018-noise2noise.md)
 * [\_\(2017\) ShuffleNet](computer-vision/2017-shufflenet.md)
@@ -28,7 +23,6 @@
 * [\(2019\) VOS with ConvLSTM](computer-vision/2019-vos-convlstm.md)
 * [\(2015\) Convolutional LSTM](computer-vision/2015-convolutional-lstm.md)
 * [\(2018\) ICNet](computer-vision/2018-icnet.md)
-* [\(2017\) PSPNet](computer-vision/2017-pspnet.md)
 * [\(2018\) EncNet](computer-vision/2018-encnet.md)
 * [\(2016\) Dilated Convolution](computer-vision/2016-dilated-convoloution.md)
 * [\(2019\) FEELVOS](computer-vision/2019-feelvos.md)
@@ -39,7 +33,6 @@
 * [\(2019\) Survey - MOT](computer-vision/2019-survey-mot.md)
 * [\(2019\) C-MIL](computer-vision/2019-c-mil.md)
 * [\(2020\) One-shot MOT](computer-vision/2020-one-shot-mot.md)
-* [\(2019\) PANet](computer-vision/2019-panet.md)
 * [\(2019\) Survey: HEp-2](computer-vision/2019-survey-hep-2.md)
 * [\(2019\) OCR](computer-vision/2019-ocr.md)
 
@@ -54,4 +47,23 @@
 
 * [읽을거리](undefined-1/undefined.md)
 * [EfficientDet =&gt;tflite =&gt;Android](undefined-1/efficientdet-greater-than-tflite-greater-than-android.md)
+
+## CNN
+
+* [\(2020\) HRNet](cnn/2020-hrnet.md)
+* [\(2019\) MobileNetV2](cnn/2019-mobilenetv2.md)
+* [\(2017\) MobileNets](cnn/2017-mobilenets.md)
+* [\(2015\) ResNet](cnn/2015-resnet.md)
+
+## Detection
+
+* [\(2016\) SSD](detection/2016-ssd.md)
+* [\(2015\) YOLO](detection/2015-yolo.md)
+* [Untitled](detection/untitled.md)
+
+## Segmentation
+
+* [\(2019\) PANet](segmentation/2019-panet.md)
+* [\(2017\) PSPNet](segmentation/2017-pspnet.md)
+* [Untitled](segmentation/untitled.md)
 

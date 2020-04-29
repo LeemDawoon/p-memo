@@ -60,7 +60,7 @@ description: >-
 
 * 1\) Face classification: 
   * 얼굴인지 아닌지 구분하는 테스크로 loss는 cross entropy.
-  * ![](../.gitbook/assets/image%20%28107%29.png)
+  * ![](../.gitbook/assets/image%20%28108%29.png)
 * 2\) Bounding box regression: 
   * 각각의 window에 대해서, 가까운 ground truth 간의 offset을 예측\(left, top, height, width\). loss는 regression.
   * ![](../.gitbook/assets/image%20%2813%29.png)
@@ -71,7 +71,7 @@ description: >-
 * 4\) Multi-source training:
   * Eq. \(1\)-\(3\)를 모두 쓰지는 않는데, 예를 들어, 배경영역의 경우 식\(1\)만 계산하고 나머지 Loss는 0으로 설정한다. 이는 type indicator\(_β\) 로 구현된다._
   * task별 가중치\(α\)를 줘서 식\(4\)처럼 한다.
-  * ![](../.gitbook/assets/image%20%2868%29.png)
+  * ![](../.gitbook/assets/image%20%2869%29.png)
     * α: Task의 중요도를 나타내는 가중치.
       * P-Net와 R-Net의 경우:  α-det = 1,  α-box=0.5, α-landmark=0.5
       * O-Net의 경우:  α-det = 1,  α-box=0.1, α-landmark=0.5

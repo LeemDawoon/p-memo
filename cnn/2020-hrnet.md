@@ -1,0 +1,56 @@
+---
+description: Deep High-Resolution Representation Learning for Visual Recognition
+---
+
+# \(2020\) HRNet
+
+* ​논문링크: [https://arxiv.org/pdf/1908.07919.pdf](https://arxiv.org/pdf/1908.07919.pdf)
+* 코드링크: [https://github.com/HRNet/](https://github.com/HRNet/HRNet-Semantic-Segmentation)
+
+요약.
+
+* CCN 에서 feature map의 크기가 작아지면서,  low-resolution representation의 문제를 제기.
+* 따라서 본 논문에서 High-Resolution Network \(HRNet\)을 제안. 2가지 특징이 있다.
+  * \(i\) Connect the high-to-low resolution convolution streams in parallel
+  * \(ii\) Repeatedly exchange the information across resolutions. 
+
+## 1 INTRODUCTION
+
+* high -resolution representation은 다음과 같은 위치에 민감한 테스크에 필요하다.
+  * semantic segmentation,
+  * human pose estimation
+  * object detection
+* 이전의 state-of-the-art 방법들도 high-resolution로 복원하는 방법을 채택한다.
+* **HRNetV1**: outputs the high-resolution representation computed from the high-resolution convolution stream. \(Deep high-resolution representation learning for human pose estimation\)
+* **HRNetV2**: combines the representations from all the high-to-low resolution parallel streams
+* **HRNetV2p**:  multi-level representation from the high-resolution representation output from HRNetV2,
+
+## 2 RELATED WORK
+
+* Learning low-resolution representations: 
+  * 
+* Recovering high-resolution representations:
+  * 
+* **Maintaining high-resolution representations:**
+* **Multi-scale fusion:**
+
+
+
+3 HIGH-RESOLUTION NETWORKS
+
+
+
+![](../.gitbook/assets/image%20%2859%29.png)
+
+* 처음 입력이미지를 stride2 3×3 convolutions을 거쳐서 입력이미지 해상도의 1/4로 줄이는데, 이 resolution을 계속 유지한다.
+* 세부적으로는 다음과 같은 컴포넌트들로 구성된다.
+  * parallel multi-resolution convolutions
+  * repeated multi-resolution fusions
+  * representation head
+
+
+
+
+
+
+
