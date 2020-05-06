@@ -16,7 +16,7 @@ description: Context Encoding for Semantic Segmentation
 
 ## 2. Context Encoding Module
 
-![](../.gitbook/assets/image%20%2835%29.png)
+![](../.gitbook/assets/image%20%2836%29.png)
 
 
 
@@ -24,6 +24,6 @@ Context Encoding:
 
 * We employ the **Encoding Layer \[58\]** to capture the feature statistics as a global semantic context.
   * \[58\] Deep TEN: Texture Encoding Network \([https://arxiv.org/pdf/1612.02844.pdf](https://arxiv.org/pdf/1612.02844.pdf)\)
-  * ![](../.gitbook/assets/image%20%2838%29.png)
+  * ![](../.gitbook/assets/image%20%2839%29.png)
 * We refer to the output of Encoding Layer as _encoded semantics_
 * 
