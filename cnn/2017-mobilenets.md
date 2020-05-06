@@ -16,7 +16,7 @@ description: >-
 
 * 모델의 크기를 줄이기 위한 목적.
 
-![Figure 2. The standard convolutional filters in \(a\) are replaced by two layers: depthwise convolution in \(b\) and pointwise convolution in \(c\) to build a depthwise separable filter.](../.gitbook/assets/image%20%28105%29.png)
+![Figure 2. The standard convolutional filters in \(a\) are replaced by two layers: depthwise convolution in \(b\) and pointwise convolution in \(c\) to build a depthwise separable filter.](../.gitbook/assets/image%20%28107%29.png)
 
 * standard convolution 2\(a\) 는 depthwise convolution 2\(b\) 와  1 × 1 pointwise convolution 2\(c\)로 factorization 된다.
 * standard convolution은 convolution kernel에 의해 feature를 filtering하고 combination하는 2가지 스탭을 수행하는 효과를 가진다.
@@ -24,7 +24,7 @@ description: >-
 
 
 
-![standard convolution &#xACC4;&#xC0B0;&#xC2DD;\(stride-1, padding-1\)&#xC774;&#xB77C;&#xACE0; &#xAC00;&#xC815;.](../.gitbook/assets/image%20%28130%29.png)
+![standard convolution &#xACC4;&#xC0B0;&#xC2DD;\(stride-1, padding-1\)&#xC774;&#xB77C;&#xACE0; &#xAC00;&#xC815;.](../.gitbook/assets/image%20%28132%29.png)
 
 * F: Input feature map
   * **D**F × **D**F × **M**
@@ -36,15 +36,15 @@ description: >-
 * K: Convolution Kernel
   * **D**K ×**D**K ×**M**×**N**
 
-![&#xC2DD;\(1\)&#xC758;  computational cost ](../.gitbook/assets/image%20%28126%29.png)
+![&#xC2DD;\(1\)&#xC758;  computational cost ](../.gitbook/assets/image%20%28128%29.png)
 
 * Depthwise separable convolution를 구성하는 2가지 레이어.
   * depthwise convolutions : 
     * input channel을 filtering 하는 효과.
     * m-th 필터\(channel\)에 대해서 계산한 depthwise convolution 결과.
-      * ![](../.gitbook/assets/image%20%28153%29.png)
+      * ![](../.gitbook/assets/image%20%28155%29.png)
     * 계산 비용:
-      * ![](../.gitbook/assets/image%20%28115%29.png)
+      * ![](../.gitbook/assets/image%20%28117%29.png)
   * pointwise convolutions: 
     * depthwise convolution의 결과를 linear combination 하는 효과.
     * 새로운 feature 생성.
@@ -70,7 +70,7 @@ description: >-
   * \(224, 192, 160 or 128\)
 
 * α 와 ρ 가 둘다 포함되어 있을 때, 계산비용:
-  * ![](../.gitbook/assets/image%20%2898%29.png)
+  * ![](../.gitbook/assets/image%20%28100%29.png)
 
 ### 3. 전체구조
 
