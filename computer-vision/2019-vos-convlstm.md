@@ -54,15 +54,15 @@ A. LSTM-SegNet\(패스...\)
 
 B. LSTM-ICNet
 
-![LSTM-ICNet](../.gitbook/assets/image%20%2862%29.png)
+![LSTM-ICNet](../.gitbook/assets/image%20%2863%29.png)
 
 IV. EVALUATION
 
 * LSTM-ICNet version 6가 좋은편.
 
-![](../.gitbook/assets/image%20%28128%29.png)
+![](../.gitbook/assets/image%20%28130%29.png)
 
-![](../.gitbook/assets/image%20%28141%29.png)
+![](../.gitbook/assets/image%20%28143%29.png)
 
 
 

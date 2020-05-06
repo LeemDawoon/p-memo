@@ -21,6 +21,8 @@ Abstract
   * the instance-based Panoptic Quality \(PQ\) metric:
   * the region-based Parsing Covering \(PC\) metric:
 
+![](../.gitbook/assets/image%20%28102%29.png)
+
 
 
 Introduction
@@ -28,6 +30,8 @@ Introduction
 Related Work
 
 3. Methodology
+
+![](../.gitbook/assets/image%20%2816%29.png)
 
 * encoder-decoder paradigm 채택.
 * shared decoder output 로 부터 semantic segmentation 과 instance segmentation 을 생성하고, 최종 parsing image를 합성한다.
@@ -39,7 +43,7 @@ Related Work
 
 3.2. Decoder
 
-![](../.gitbook/assets/image%20%2857%29.png)
+![](../.gitbook/assets/image%20%2858%29.png)
 
 
 
@@ -55,7 +59,7 @@ Related Work
 * Moreover, we weigh the pixel loss based on instance sizes, putting more emphasis on small instances.
 * Our proposed weighted bootstrapped cross-entropy loss is defined by:
 
-![](../.gitbook/assets/image%20%2867%29.png)
+![](../.gitbook/assets/image%20%2868%29.png)
 
 * $$y_i$$ is the target class label for pixel $$i$$.
 * $$p_{i,j}$$ is the predicted posterior probability for pixel $$i$$ and class $$j$$.
@@ -69,7 +73,7 @@ Related Work
 * keypoint-based representation for object instances 채택.
 * we consider the four bounding box corners and the center of mass as our P = 5 object keypoints.
 
-![](../.gitbook/assets/image%20%28139%29.png)
+![](../.gitbook/assets/image%20%28141%29.png)
 
 * **The keypoint heatmap \(Fig. 4a\)**
   * predicts whether a pixel is within a disk of radius R pixels centered in the corresponding keypoint.
@@ -127,12 +131,12 @@ Related Work
 3.5. Evaluation Metrics
 
 * Panoptic Quality \(PQ\)
-  * ![](../.gitbook/assets/image%20%2816%29.png)
+  * ![](../.gitbook/assets/image%20%2817%29.png)
   * R and R' are groundtruth regions and predicted regions respectively, and \|T P\|, \|F P\|, and \|F N\| are the number of true positives, false postives, and false negatives. 
   * The matching is determined by a threshold of 0.5 IntersectionOver-Union \(IOU\).
   * 인스턴스의 크기르 고려하지 않는 점이 문제.
 * Parsing Covering \(PC\)
-  * ![](../.gitbook/assets/image%20%2885%29.png)
+  * ![](../.gitbook/assets/image%20%2886%29.png)
   * Si and S'i are the groundtruth segmentation and predicted segmentation for the i-th semantic class respectively, 
   * Ni is the total number of pixels of groundtruth regions from Si . 
   * The Covering for class i, Covi , is computed in the same way as the original Covering metric except that only groundtruth regions from Si and predicted regions from S'i are considered. 
