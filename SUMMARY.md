@@ -63,7 +63,7 @@
 
 ## Segmentation
 
+* [\(2019\) DeeperLab](segmentation/2019-deeperlab.md)
 * [\(2019\) PANet](segmentation/2019-panet.md)
 * [\(2017\) PSPNet](segmentation/2017-pspnet.md)
-* [Untitled](segmentation/untitled.md)
 
