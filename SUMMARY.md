@@ -42,6 +42,7 @@
 * [\(2019\) ArcFace](etc/2019-arcface.md)
 * [Quantization](etc/quantization.md)
 * [Miniconda](etc/undefined.md)
+* [Jupyter 커널 추가](etc/jupyter.md)
 
 ## 우당탕 <a id="undefined-1"></a>
 
