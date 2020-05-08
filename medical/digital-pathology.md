@@ -1,10 +1,11 @@
 # Digital Pathology
 
-* \(2020\) Decoupled Gradient Harmonized Detector for Partial Annotation: Application to Signet Ring Cell Detection
-  * MICCAI DigestPath2019 challenge 2등
-  * 논문링크: [https://arxiv.org/pdf/2004.04455.pdf](https://arxiv.org/pdf/2004.04455.pdf)
-  * **TASK:** 
-    * 
+* \(2020\) Segmentation and Classification in Digital Pathology for Glioma Research: Challenges and Deep Learning Approaches
+  * 논문링크: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7046596/pdf/fnins-14-00027.pdf](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7046596/pdf/fnins-14-00027.pdf)
+  * 
+
+
+
 * \(2018\) A Robust and Effective Approach Towards Accurate Metastasis Detection and pN-stage Classification in Breast Cancer: 
   * 원본 링크: 
     * [https://blog.lunit.io/2018/09/01/a-robust-and-effective-approach-towards-accurate-metastasis-detection-and-pn-stage-classification-in-breast-cancer/](https://blog.lunit.io/2018/09/01/a-robust-and-effective-approach-towards-accurate-metastasis-detection-and-pn-stage-classification-in-breast-cancer/)
