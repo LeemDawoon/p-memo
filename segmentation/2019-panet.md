@@ -43,9 +43,9 @@ description: 'PANet: Few-Shot Image Semantic Segmentation with Prototype Alignme
   * F는 입력 이미지의 feature map.
   * \(x, y\)는 이미지 좌표.
 
-![](../.gitbook/assets/image%20%28159%29.png)
+![](../.gitbook/assets/image%20%28160%29.png)
 
-![](../.gitbook/assets/image%20%28133%29.png)
+![](../.gitbook/assets/image%20%28134%29.png)
 
 ### 3.4. Non-parametric metric learning
 
@@ -56,11 +56,11 @@ description: 'PANet: Few-Shot Image Semantic Segmentation with Prototype Alignme
 
 
 
-![](../.gitbook/assets/image%20%28126%29.png)
+![](../.gitbook/assets/image%20%28127%29.png)
 
 * 예측 segmentation mask:
 
-![](../.gitbook/assets/image%20%28111%29.png)
+![](../.gitbook/assets/image%20%28112%29.png)
 
 * Loss:
 
@@ -72,7 +72,7 @@ description: 'PANet: Few-Shot Image Semantic Segmentation with Prototype Alignme
 
 * support image I\_{c,k}의 segmentation 확률:
 
-![](../.gitbook/assets/image%20%2877%29.png)
+![](../.gitbook/assets/image%20%2878%29.png)
 
 * 전체 Loss:
 
@@ -80,7 +80,7 @@ description: 'PANet: Few-Shot Image Semantic Segmentation with Prototype Alignme
 
 ![](../.gitbook/assets/image%20%2830%29.png)
 
-![](../.gitbook/assets/image%20%2882%29.png)
+![](../.gitbook/assets/image%20%2883%29.png)
 
 * 알고리즘:
 

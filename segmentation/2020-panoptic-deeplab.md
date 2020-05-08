@@ -8,13 +8,13 @@ description: >-
 
 * 논문링크: [https://arxiv.org/pdf/1911.10194v3.pdf](https://arxiv.org/pdf/1911.10194v3.pdf)
 
-![](../.gitbook/assets/image%20%2872%29.png)
+![](../.gitbook/assets/image%20%2873%29.png)
 
 
 
 3. Panoptic-DeepLab
 
-![](../.gitbook/assets/image%20%28132%29.png)
+![](../.gitbook/assets/image%20%28133%29.png)
 
 3.1. Architecture 
 

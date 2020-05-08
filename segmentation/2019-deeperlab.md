@@ -21,7 +21,7 @@ Abstract
   * the instance-based Panoptic Quality \(PQ\) metric:
   * the region-based Parsing Covering \(PC\) metric:
 
-![](../.gitbook/assets/image%20%28103%29.png)
+![](../.gitbook/assets/image%20%28104%29.png)
 
 
 
@@ -73,7 +73,7 @@ Related Work
 * keypoint-based representation for object instances 채택.
 * we consider the four bounding box corners and the center of mass as our P = 5 object keypoints.
 
-![](../.gitbook/assets/image%20%28143%29.png)
+![](../.gitbook/assets/image%20%28144%29.png)
 
 * **The keypoint heatmap \(Fig. 4a\)**
   * predicts whether a pixel is within a disk of radius R pixels centered in the corresponding keypoint.
@@ -136,7 +136,7 @@ Related Work
   * The matching is determined by a threshold of 0.5 IntersectionOver-Union \(IOU\).
   * 인스턴스의 크기르 고려하지 않는 점이 문제.
 * Parsing Covering \(PC\)
-  * ![](../.gitbook/assets/image%20%2887%29.png)
+  * ![](../.gitbook/assets/image%20%2888%29.png)
   * Si and S'i are the groundtruth segmentation and predicted segmentation for the i-th semantic class respectively, 
   * Ni is the total number of pixels of groundtruth regions from Si . 
   * The Covering for class i, Covi , is computed in the same way as the original Covering metric except that only groundtruth regions from Si and predicted regions from S'i are considered. 
