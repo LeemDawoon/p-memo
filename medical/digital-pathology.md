@@ -2,7 +2,14 @@
 
 * \(2020\) Segmentation and Classification in Digital Pathology for Glioma Research: Challenges and Deep Learning Approaches
   * 논문링크: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7046596/pdf/fnins-14-00027.pdf](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7046596/pdf/fnins-14-00027.pdf)
-  * 
+  * CPM challenge 에서 2등.
+  * Method:
+    * Mask-RCNN 적용.
+    * MASK non-maximum suppression \(MASK-NMS\) 적용.
+    * 백본: ResNet-101
+    * input tissue images were cropped to 600 × 600
+
+![](../.gitbook/assets/image%20%28160%29.png)
 
 
 

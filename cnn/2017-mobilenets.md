@@ -42,7 +42,7 @@ description: >-
   * depthwise convolutions : 
     * input channel을 filtering 하는 효과.
     * m-th 필터\(channel\)에 대해서 계산한 depthwise convolution 결과.
-      * ![](../.gitbook/assets/image%20%28162%29.png)
+      * ![](../.gitbook/assets/image%20%28163%29.png)
     * 계산 비용:
       * ![](../.gitbook/assets/image%20%28122%29.png)
   * pointwise convolutions: 

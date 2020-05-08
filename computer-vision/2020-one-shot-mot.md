@@ -26,7 +26,7 @@ description: A Simple Baseline for Multi-Object Tracking
   * **\(3\) Dimensionality of the ReID Features**
     * ReID 보다 학습 데이터가 적어서  ReID feature는 차원 수가 작을 수록 더 좋았다. 
 
-![](../.gitbook/assets/image%20%28160%29.png)
+![](../.gitbook/assets/image%20%28161%29.png)
 
 
 
