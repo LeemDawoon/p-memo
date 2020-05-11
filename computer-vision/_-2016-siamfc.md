@@ -11,7 +11,7 @@ description: Fully-Convolutional Siamese Networks for Object Tracking
 * f\(z, x\) 란 함수를 학습하는 모델을 제안.
   * f\(z, x\)는  exemplar image z 와 candidate image x 를 비교하는 함수인데, 두 이미지가 동일한 object를 나타내면, 높은 점수를 아니면, 낮은 점수를 리턴한다.
 * 
-![](../.gitbook/assets/image%20%28107%29.png)
+![](../.gitbook/assets/image%20%28109%29.png)
 
 * g는 거리나, 유사도 메트릭 함수로 볼 수 있다.
 * ϕ 는 임베딩함 수로 볼 수 있다.
@@ -22,7 +22,7 @@ description: Fully-Convolutional Siamese Networks for Object Tracking
 
 2.1 Fully-convolutional Siamese architecture
 
-![](../.gitbook/assets/image%20%2896%29.png)
+![](../.gitbook/assets/image%20%2898%29.png)
 
 
 

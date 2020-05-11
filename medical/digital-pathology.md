@@ -1,30 +1,25 @@
 # Digital Pathology
 
+## 적용해봤으면 하는 연구.
+
+* multiple instance learning: 
+  * 종양영역이 MSI-H와 정말 관련 있는지 확인해보는 실험.
+  * 또는 classification에 사용.
+* few-shot learning for classification:
+  * 
+
+## Digital Pathology 관련 연구.
+
 * **\(2020\) Segmentation and Classification in Digital Pathology for Glioma Research: Challenges and Deep Learning Approaches**
   * 논문링크: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7046596/pdf/fnins-14-00027.pdf](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7046596/pdf/fnins-14-00027.pdf)
   * MICCAI 2018 CPM challenge 에서 2등.
-    * WSI와 뇌 MRI가 같이 주어지며, 악성 세포를 분류하는 문제 같음.
+  * Task1: Instance Segmentation of Nuclei in Brain Tissue Images
+  * Task2: Methods for Classification of Brain Cancer Cases
+    * Methods for Classification of Brain Cancer Cases: WSI와 뇌 MRI가 같이 주어지며, 악성 세포를 분류하는 문제 같음.
     * WSI 쪽만 봐보자.
-  * **Instance Segmentation of Nuclei in Brain Tissue Images Method:**
-    * Mask-RCNN 적용.
-    * MASK non-maximum suppression \(MASK-NMS\) 적용.
-      * MASK-NMS는 최대 중첩을 가진 마스크의 결합을 취하고 작은 중첩으로 FP 마스크를 제거합니다.
-    * 백본: ResNet-101
-    * input tissue images were cropped to 600 × 600
-    * 세그멘테이션 결과 세트를 I이라고합니다. 
-    * 세트 I의 각 결과에는 점수 S가 할당됩니다.
-    * S는 Mask-RCNN 모듈의 분류 확률 값이며 분할 결과의 confidence level 에 해당합니다.
-    * 최대 점수 M \(점수 S 중 최대 점수\)으로 세분화를 선택한 후 MASK-NMS는이를 세트 I에서 제거하고이를 final segmentation 세트 D에 추가합니다.
-    * D는 빈 세트로 초기화됩니다. 
-    * 또한 세트 I에서 임계 값 N보다 큰 오버랩이있는 세그먼트를 제거합니다. 여기서 교차 합집합 \(IOU\)이 오버랩 메트릭으로 사용됩니다.
-    * I 가 빌때 까지 반복.
+  * **Histopathology classification model:**
 
-![](../.gitbook/assets/image%20%28161%29.png)
-
-*  * **Analysis pipeline for whole slide tissue images:**
-    * d
-
-![](../.gitbook/assets/image%20%2871%29.png)
+![Analysis pipeline for whole slide tissue images](../.gitbook/assets/image%20%2873%29.png)
 
 *  * **Histopathology classification model:**
     * multiple instance learning approach
@@ -32,12 +27,31 @@
       * tissue detection: Otsu thresholding.
       * color normalization: histogram equalization
       * tiling: 랜덤 샘플링해서 20개의 448 × 448-pixel patches를 추출.
+    * feature extraction:
+    * classification: 
 
-![](../.gitbook/assets/image%20%28165%29.png)
+![](../.gitbook/assets/image%20%28169%29.png)
 
 
 
-*  * *  * d
+* **\(2019\) Accurate Gastric Cancer Segmentation in Digital Pathology Images Using Deformable Convolution and Multi-Scale Embedding Networks**
+  * 논문링크:  [https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8721664](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8721664)
+  * contributions : 
+    * 1\) We have created a clinical gastric cancer segmentation dataset for our research, which has been delicately annotated by medical specialists.
+    *  2\) We have proposed multi-scale embedding networks for segmenting cancerous regions of various sizes, in which we have integrated **Atrous Spatial Pyramid Pooling module** and **encoder-decoder based semantic-level embedding networks.**
+    *  3\) We have applied the **deformable convolutional module** for adapting to the non-rigid characters of pathological images, and we have utilized the **dense upsampling convolution** for boundary refinement at the end of our architecture.
+  * Method: 
+    * A. SELECTED BACKBONE RESNET-101
+    * B. ENCODER WITH DEFORMABLE CONVOLUTION AND ATROUS CONVOLUTION
+      * Deformable convolution integration:
+      * Atrous Spatial Pyramid Pooling:
+    * C. SEMANTIC-LEVEL EMBEDDING STRATEGY
+    * D. PROPOSED DECODER AND DENSE UPSAMPLING
+    * E. OVERALL FRAMEWORK
+    * ![](../.gitbook/assets/image%20%2819%29.png)
+* **\(2019\): Computational Nuclei Segmentation Methods in Digital Pathology: A Survey**
+  * 논문링크: [https://www.researchgate.net/profile/Surya\_Prasath/publication/336347859\_Computational\_Nuclei\_Segmentation\_Methods\_in\_Digital\_Pathology\_A\_Survey/links/5da687da299bf1c1e4c37d41/Computational-Nuclei-Segmentation-Methods-in-Digital-Pathology-A-Survey.pdf](https://www.researchgate.net/profile/Surya_Prasath/publication/336347859_Computational_Nuclei_Segmentation_Methods_in_Digital_Pathology_A_Survey/links/5da687da299bf1c1e4c37d41/Computational-Nuclei-Segmentation-Methods-in-Digital-Pathology-A-Survey.pdf)
+  * 세그멘테이션할때, HSV 컬러 스페이스가 좋다는 것 같음...
 * **\(2018\) A Robust and Effective Approach Towards Accurate Metastasis Detection and pN-stage Classification in Breast Cancer** 
   * 원본 링크: 
     * [https://blog.lunit.io/2018/09/01/a-robust-and-effective-approach-towards-accurate-metastasis-detection-and-pn-stage-classification-in-breast-cancer/](https://blog.lunit.io/2018/09/01/a-robust-and-effective-approach-towards-accurate-metastasis-detection-and-pn-stage-classification-in-breast-cancer/)
@@ -58,6 +72,15 @@
        * **pN1mi**: Macro 전이상태는 없지만, Micro 전이상태가 존재할 경우
        * **pN1**: 1~3개의 전이된 림프절이 존재하면서, 적어도 1개 이상이 Macro 전이상태일 경우
        * **pN2**: 4~9개의 전이된 림프절이 존재하면서, 적어도 1개 이상이 Macro 전이상태일 경우
+  * augmentation:
+
+![](../.gitbook/assets/image%20%2818%29.png)
+
+![](../.gitbook/assets/image%20%28114%29.png)
+
+![](../.gitbook/assets/image%20%28148%29.png)
+
+
 
 
 
