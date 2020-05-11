@@ -58,7 +58,7 @@ description: Pyramid Scene Parsing Network
 * hierarchical global prior은 sub-regions에 따라 다른 크기의 정보를 포함한다. 
 * 이걸 pyramid pooling module이라고 한다.
 
-![PSPNet](../.gitbook/assets/image%20%2892%29.png)
+![PSPNet](../.gitbook/assets/image%20%2893%29.png)
 
 * pyramid pooling module은  4가지 스케일의 feature를 융합한다.
 * 1\) pyramid
@@ -96,7 +96,7 @@ description: Pyramid Scene Parsing Network
 
 ## 5. Experiments
 
-![](../.gitbook/assets/image%20%28107%29.png)
+![](../.gitbook/assets/image%20%28108%29.png)
 
  
 

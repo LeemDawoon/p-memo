@@ -19,7 +19,7 @@
     * WSI 쪽만 봐보자.
   * **Histopathology classification model:**
 
-![Analysis pipeline for whole slide tissue images](../.gitbook/assets/image%20%2873%29.png)
+![Analysis pipeline for whole slide tissue images](../.gitbook/assets/image%20%2874%29.png)
 
 *  * **Histopathology classification model:**
     * multiple instance learning approach
@@ -30,9 +30,26 @@
     * feature extraction:
     * classification: 
 
-![](../.gitbook/assets/image%20%28169%29.png)
+![](../.gitbook/assets/image%20%28171%29.png)
 
 
+
+* **\(2019\) CAMEL: A Weakly Supervised Learning Framework for Histopathology Image Segmentation**
+
+  *  논문링크: [https://arxiv.org/pdf/1908.10555.pdf](https://arxiv.org/pdf/1908.10555.pdf)
+  * 코드링크: [https://github.com/ThoroughImages/CAMEL](https://github.com/ThoroughImages/CAMEL)
+  * Task
+    * WSI에 분류라벨만 있을 경우, segmentation 하는 방법.
+    * ![](../.gitbook/assets/image%20%2830%29.png)
+  * Method
+    * Multiple instance 접근법
+    * ![](../.gitbook/assets/image%20%28163%29.png)
+
+
+
+
+
+  ![](blob:https://doaiacropolis.atlassian.net/43269653-a63c-450c-9889-61e972d2a8cf#media-blob-url=true&id=f6ec2f40-fa33-42f0-bc4a-07848e3a74a8&collection=contentId-425099485&contextId=425099485&mimeType=image%2Fpng&name=image-20200511-092507.png&size=343303&width=1203&height=705)
 
 * **\(2019\) Accurate Gastric Cancer Segmentation in Digital Pathology Images Using Deformable Convolution and Multi-Scale Embedding Networks**
   * 논문링크:  [https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8721664](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8721664)
@@ -74,11 +91,15 @@
        * **pN2**: 4~9개의 전이된 림프절이 존재하면서, 적어도 1개 이상이 Macro 전이상태일 경우
   * augmentation:
 
+
+
+
+
 ![](../.gitbook/assets/image%20%2818%29.png)
 
-![](../.gitbook/assets/image%20%28114%29.png)
+![](../.gitbook/assets/image%20%28115%29.png)
 
-![](../.gitbook/assets/image%20%28148%29.png)
+![](../.gitbook/assets/image%20%28149%29.png)
 
 
 

@@ -35,7 +35,7 @@ description: 'PANet: Few-Shot Image Semantic Segmentation with Prototype Alignme
   * maxpool4 layer의 stride를 1로\(해상도 보존\).
   * conv5 block을 dilation=2인 dilated conv conv 로 교체\(receptive field 증\).
 
-![](../.gitbook/assets/image%20%2850%29.png)
+![](../.gitbook/assets/image%20%2851%29.png)
 
 ### 3.3. Prototype learning
 
@@ -43,9 +43,9 @@ description: 'PANet: Few-Shot Image Semantic Segmentation with Prototype Alignme
   * F는 입력 이미지의 feature map.
   * \(x, y\)는 이미지 좌표.
 
-![](../.gitbook/assets/image%20%28164%29.png)
+![](../.gitbook/assets/image%20%28166%29.png)
 
-![](../.gitbook/assets/image%20%28137%29.png)
+![](../.gitbook/assets/image%20%28138%29.png)
 
 ### 3.4. Non-parametric metric learning
 
@@ -56,11 +56,11 @@ description: 'PANet: Few-Shot Image Semantic Segmentation with Prototype Alignme
 
 
 
-![](../.gitbook/assets/image%20%28130%29.png)
+![](../.gitbook/assets/image%20%28131%29.png)
 
 * 예측 segmentation mask:
 
-![](../.gitbook/assets/image%20%28115%29.png)
+![](../.gitbook/assets/image%20%28116%29.png)
 
 * Loss:
 
@@ -72,19 +72,19 @@ description: 'PANet: Few-Shot Image Semantic Segmentation with Prototype Alignme
 
 * support image I\_{c,k}의 segmentation 확률:
 
-![](../.gitbook/assets/image%20%2880%29.png)
+![](../.gitbook/assets/image%20%2881%29.png)
 
 * 전체 Loss:
 
 
 
-![](../.gitbook/assets/image%20%2832%29.png)
+![](../.gitbook/assets/image%20%2833%29.png)
 
-![](../.gitbook/assets/image%20%2885%29.png)
+![](../.gitbook/assets/image%20%2886%29.png)
 
 * 알고리즘:
 
-![](../.gitbook/assets/image%20%2862%29.png)
+![](../.gitbook/assets/image%20%2863%29.png)
 
 
 
