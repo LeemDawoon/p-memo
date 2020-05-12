@@ -14,7 +14,7 @@ description: >-
 
 3. Panoptic-DeepLab
 
-![](../.gitbook/assets/image%20%28137%29.png)
+![](../.gitbook/assets/image%20%28138%29.png)
 
 3.1. Architecture 
 

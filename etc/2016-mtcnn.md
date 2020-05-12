@@ -60,7 +60,7 @@ description: >-
 
 * 1\) Face classification: 
   * 얼굴인지 아닌지 구분하는 테스크로 loss는 cross entropy.
-  * ![](../.gitbook/assets/image%20%28122%29.png)
+  * ![](../.gitbook/assets/image%20%28123%29.png)
 * 2\) Bounding box regression: 
   * 각각의 window에 대해서, 가까운 ground truth 간의 offset을 예측\(left, top, height, width\). loss는 regression.
   * ![](../.gitbook/assets/image%20%2813%29.png)
