@@ -25,9 +25,7 @@ description: Prostate cANcer graDe Assessment (PANDA) Challenge
     * gleason score를 5개로 그룹핑하여, 암의 중증도를 분류한다.
     * 특이점은 GS7인 경우, Primary grade가 3이냐 4이냐에 따라, 환자군의 예후가 많이 달라서, Gleason grading의 서로 다른 그룹으로 분리되었다\(같은 GS 7 전립선 암이라 하더라도 GS 4+3 에 비해 GS 3+4 전립선암 환자의 예후가 더 좋다는 결과들이 많이 보고 되었음 - [https://www.kjuo.or.kr/journal/Figure.php?xn=kjuo-15-3-93.xml&id=](https://www.kjuo.or.kr/journal/Figure.php?xn=kjuo-15-3-93.xml&id=)\)
 
-
-
-    * ![](../.gitbook/assets/image%20%28116%29.png)
+![](../.gitbook/assets/image%20%28116%29.png)
 
 ## Description:
 
