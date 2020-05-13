@@ -12,6 +12,22 @@ description: Prostate cANcer graDe Assessment (PANDA) Challenge
 * prostate cancer \(PCa\)
 * Gleason pattern & Gleason grading system
   * [https://en.wikipedia.org/wiki/Gleason\_grading\_system](https://en.wikipedia.org/wiki/Gleason_grading_system)
+  * **Gleason pattern:**  
+    * 세포가 그 형태를 유지하는 정도에 따라 1~5 패턴이 있다.
+    * 3~5패턴이 암과 관련된 패턴이라고 할 수 있을 것 같다.
+  * **Gleason score \(GS\):**
+    * WSI\(또는 생검/바이옵시?!\) 에서 gleason pattern의 존재와 비율에 따라서 점수를 산출한다.
+    * 조직 샘플 마다 Primary grade와 Secondary grade를 부여하며, Primary grade와 Secondary grade의 합이 Gleason score이다.
+    * **Primary grade** - assigned to the dominant pattern of the tumor \(has to be greater than 50% of the total pattern seen\).
+    * **Secondary grade** - assigned to the next-most frequent pattern \(has to be less than 50%, but at least 5%, of the pattern of the total cancer observed\).
+  * **Gleason grading system \(ISUP grade\):**
+
+    * gleason score를 5개로 그룹핑하여, 암의 중증도를 분류한다.
+    * 특이점은 GS7인 경우, Primary grade가 3이냐 4이냐에 따라, 환자군의 예후가 많이 달라서, Gleason grading의 서로 다른 그룹으로 분리되었다\(같은 GS 7 전립선 암이라 하더라도 GS 4+3 에 비해 GS 3+4 전립선암 환자의 예후가 더 좋다는 결과들이 많이 보고 되었음 - [https://www.kjuo.or.kr/journal/Figure.php?xn=kjuo-15-3-93.xml&id=](https://www.kjuo.or.kr/journal/Figure.php?xn=kjuo-15-3-93.xml&id=)\)
+
+
+
+    * ![](../.gitbook/assets/image%20%28116%29.png)
 
 ## Description:
 
@@ -27,12 +43,6 @@ description: Prostate cANcer graDe Assessment (PANDA) Challenge
 * biopsy에 Gleason score 가 할당되면, 1에서 5사이의 ISUP grade로 변환한다.
 * Gleason grading system는 가장 중요한, prognostic marker.
 * ISUP grade: 환자를 치료하는 방법을 결정할 때, 중요한 역할.
-  * [https://www.kjuo.or.kr/journal/Figure.php?xn=kjuo-15-3-93.xml&id=](https://www.kjuo.or.kr/journal/Figure.php?xn=kjuo-15-3-93.xml&id=)
-  * 같은 GS 7 전립선 암이라 하더라도 GS 4+3 에 비해 GS 3+4 전립선암 환자의 예후가 더 좋다는 결과들이 많이 보고.
-  * 전립선 생검에서 Gleason grade가 절대적으로 중요한데, Epstein 등이 새로운 Gleason grading system을 제시하였는데, 전체 5 그룹이고, GS 6가 가장 낮은 score로 grade group 1, GS 7 \(3+4\)은 grade group 2, GS 7 \(4+3\)은 grade group 3, GS 8은 grade group 4, GS 9–10을 grade group 5로 정의하였다.
-  * ![](../.gitbook/assets/image%20%28116%29.png)
-
-  * 
 * 이러한 평가에는, 암을 진단하지 못하거나\(빠뜨리거나\), overgrade 하여 불필요한 치료를 할 위험이있다.
 * 병리사간 평가의 차이가 많이 난다.
 * 최근 연구에서는, 병리사가 하는 평가를 딥러닝으로 수행하여, 좋은 성과를 보였는데, 대규모의 다중 센터 데이터에 해서는 지 않았다.
