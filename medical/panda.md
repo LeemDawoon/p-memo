@@ -10,7 +10,8 @@ description: Prostate cANcer graDe Assessment (PANDA) Challenge
 ## 약자 및 용어:
 
 * prostate cancer \(PCa\)
-* Gleason grading system
+* Gleason pattern & Gleason grading system
+  * [https://en.wikipedia.org/wiki/Gleason\_grading\_system](https://en.wikipedia.org/wiki/Gleason_grading_system)
 
 ## Description:
 
