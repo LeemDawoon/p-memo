@@ -26,6 +26,12 @@ description: Prostate cANcer graDe Assessment (PANDA) Challenge
 * biopsy에 Gleason score 가 할당되면, 1에서 5사이의 ISUP grade로 변환한다.
 * Gleason grading system는 가장 중요한, prognostic marker.
 * ISUP grade: 환자를 치료하는 방법을 결정할 때, 중요한 역할.
+  * [https://www.kjuo.or.kr/journal/Figure.php?xn=kjuo-15-3-93.xml&id=](https://www.kjuo.or.kr/journal/Figure.php?xn=kjuo-15-3-93.xml&id=)
+  * 같은 GS 7 전립선 암이라 하더라도 GS 4+3 에 비해 GS 3+4 전립선암 환자의 예후가 더 좋다는 결과들이 많이 보고.
+  * 전립선 생검에서 Gleason grade가 절대적으로 중요한데, Epstein 등이 새로운 Gleason grading system을 제시하였는데, 전체 5 그룹이고, GS 6가 가장 낮은 score로 grade group 1, GS 7 \(3+4\)은 grade group 2, GS 7 \(4+3\)은 grade group 3, GS 8은 grade group 4, GS 9–10을 grade group 5로 정의하였다.
+  * ![](../.gitbook/assets/image%20%28116%29.png)
+
+  * 
 * 이러한 평가에는, 암을 진단하지 못하거나\(빠뜨리거나\), overgrade 하여 불필요한 치료를 할 위험이있다.
 * 병리사간 평가의 차이가 많이 난다.
 * 최근 연구에서는, 병리사가 하는 평가를 딥러닝으로 수행하여, 좋은 성과를 보였는데, 대규모의 다중 센터 데이터에 해서는 지 않았다.
@@ -37,12 +43,16 @@ description: Prostate cANcer graDe Assessment (PANDA) Challenge
 
 
 
+
+
 ![](../.gitbook/assets/image%20%2889%29.png)
 
  **Figure 1**: An illustration of the Gleason grading process for an example biopsy containing prostate cancer. 
 
 * The most common \(blue outline, Gleason pattern 3\) and second most common \(red outline, Gleason pattern 4\) cancer growth patterns present in the biopsy dictate the Gleason score \(3+4 for this biopsy\), which in turn is converted into an ISUP grade \(2 for this biopsy\) following guidelines of the International Society of Urological Pathology. 
 * 본 과제에서는, 암이 없는 Biopsies  ISUP grade = 0 으로 나타냄.
+
+
 
 
 

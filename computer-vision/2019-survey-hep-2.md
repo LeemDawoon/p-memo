@@ -37,7 +37,7 @@ description: 'Deep Learning based HEp-2 Image Classification: A Comprehensive Re
 
 ### 3.2 Specimen-level HEp-2 image classification \(SL-HEP2IC\) methods
 
-![](../.gitbook/assets/image%20%28127%29.png)
+![](../.gitbook/assets/image%20%28128%29.png)
 
 
 

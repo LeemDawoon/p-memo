@@ -73,7 +73,7 @@ Related Work
 * keypoint-based representation for object instances 채택.
 * we consider the four bounding box corners and the center of mass as our P = 5 object keypoints.
 
-![](../.gitbook/assets/image%20%28149%29.png)
+![](../.gitbook/assets/image%20%28150%29.png)
 
 * **The keypoint heatmap \(Fig. 4a\)**
   * predicts whether a pixel is within a disk of radius R pixels centered in the corresponding keypoint.

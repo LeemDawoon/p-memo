@@ -120,7 +120,7 @@ tf~~.~~keras.preprocessing.image.ImageDataGenerator\(zoom\_range\)
 
 3.2. Stain color normalization
 
-![](../.gitbook/assets/image%20%28131%29.png)
+![](../.gitbook/assets/image%20%28132%29.png)
 
 * Identity: baseline. 아무것도 안한.
 * Grayscale:

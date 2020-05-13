@@ -30,7 +30,7 @@
     * feature extraction:
     * classification: 
 
-![](../.gitbook/assets/image%20%28172%29.png)
+![](../.gitbook/assets/image%20%28173%29.png)
 
 
 
@@ -43,7 +43,7 @@
     * ![](../.gitbook/assets/image%20%2830%29.png)
   * Method
     * Multiple instance 접근법
-    * ![](../.gitbook/assets/image%20%28164%29.png)
+    * ![](../.gitbook/assets/image%20%28165%29.png)
 
 
 
@@ -97,9 +97,9 @@
 
 ![](../.gitbook/assets/image%20%2818%29.png)
 
-![](../.gitbook/assets/image%20%28116%29.png)
+![](../.gitbook/assets/image%20%28117%29.png)
 
-![](../.gitbook/assets/image%20%28150%29.png)
+![](../.gitbook/assets/image%20%28151%29.png)
 
 
 
