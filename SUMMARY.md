@@ -45,6 +45,7 @@
 * [Quantization](etc/quantization.md)
 * [Miniconda](etc/undefined.md)
 * [Jupyter 커널 추가](etc/jupyter.md)
+* [Dataset](etc/dataset.md)
 
 ## 우당탕 <a id="undefined-1"></a>
 
@@ -71,4 +72,5 @@
 * [\(2019\) DeeperLab](segmentation/2019-deeperlab.md)
 * [\(2019\) PANet](segmentation/2019-panet.md)
 * [\(2017\) PSPNet](segmentation/2017-pspnet.md)
+* [Segmentation under class imbalance](segmentation/segmentation-under-class-imbalance.md)
 
