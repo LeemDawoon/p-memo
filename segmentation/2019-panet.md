@@ -6,6 +6,7 @@ description: 'PANet: Few-Shot Image Semantic Segmentation with Prototype Alignme
 
 * 논문링크: ​[http://openaccess.thecvf.com/content\_ICCV\_2019/papers/Wang\_PANet\_Few-Shot\_Image\_Semantic\_Segmentation\_With\_Prototype\_Alignment\_ICCV\_2019\_paper.pdf](http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_PANet_Few-Shot_Image_Semantic_Segmentation_With_Prototype_Alignment_ICCV_2019_paper.pdf)
 * 코드링크:  [https://github.com/kaixin96/PANet](https://github.com/kaixin96/PANet)
+* fewshot learning 개념: [https://www.kakaobrain.com/blog/106](https://www.kakaobrain.com/blog/106)
 
 ## **3.** Method
 
